@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities
+ majorVersion="9"
+ minorVersion="3"
+ universal="password">
+    <ThingTemplates>
+        <ThingTemplate
+         baseThingTemplate="GenericThing"
+         description=""
+         documentationContent=""
+         effectiveThingPackage="ConfiguredThing"
+         homeMashup=""
+         inheritedValueStream=""
+         name="47364.GIMS.CommonServices.ThingTemplate"
+         projectName="ITC.Training.47364.GIMS.Project"
+         tags=""
+         thingPackage=""
+         valueStream="">
+            <avatar></avatar>
+            <DesignTimePermissions>
+                <Create></Create>
+                <Read></Read>
+                <Update></Update>
+                <Delete></Delete>
+                <Metadata></Metadata>
+            </DesignTimePermissions>
+            <RunTimePermissions>
+                <Permissions
+                 resourceName="*">
+                    <PropertyRead>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Admin.UserGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Worker.UserGroup"
+                         type="Group"></Principal>
+                    </PropertyRead>
+                    <PropertyWrite>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Admin.UserGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Worker.UserGroup"
+                         type="Group"></Principal>
+                    </PropertyWrite>
+                    <ServiceInvoke>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Admin.UserGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Worker.UserGroup"
+                         type="Group"></Principal>
+                    </ServiceInvoke>
+                    <EventInvoke>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Admin.UserGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Worker.UserGroup"
+                         type="Group"></Principal>
+                    </EventInvoke>
+                    <EventSubscribe>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Admin.UserGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Worker.UserGroup"
+                         type="Group"></Principal>
+                    </EventSubscribe>
+                </Permissions>
+            </RunTimePermissions>
+            <VisibilityPermissions>
+                <Visibility>
+                    <Principal
+                     isPermitted="true"
+                     name="47364.GIMS.Organization"
+                     type="Organization"></Principal>
+                </Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
+            <ConfigurationTables></ConfigurationTables>
+            <PropertyBindings></PropertyBindings>
+            <RemotePropertyBindings></RemotePropertyBindings>
+            <RemoteServiceBindings></RemoteServiceBindings>
+            <RemoteEventBindings></RemoteEventBindings>
+            <AlertConfigurations></AlertConfigurations>
+            <ThingShape>
+                <PropertyDefinitions></PropertyDefinitions>
+                <ServiceDefinitions></ServiceDefinitions>
+                <EventDefinitions></EventDefinitions>
+                <ServiceMappings></ServiceMappings>
+                <ServiceImplementations>
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="AddProductContainer">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             dataShapeName=""
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        let id=ProductID;
+                                        var query={
+                                            "filters":{
+                                                "type":"EQ",
+                                                "fieldName":"ProductID",
+                                                "value":id
+                                            }
+                                        };
+                                        
+                                        var rows=Things["47364.GIMS.ProductDetails.DataTable"].QueryDataTableEntries({
+                                            values: undefined /* INFOTABLE */,
+                                            maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                            tags: undefined /* TAGS */,
+                                            source: undefined /* STRING */,
+                                            query: query /* QUERY */
+                                        });
+                                        let currentQuantity;
+                                        let currentDayTotal;
+                                        if(rows.length==0){
+                                            currentQuantity=Quantity;
+                                            currentDayTotal=0;
+                                        }else{
+                                            currentQuantity=rows[0].ProductQuantity+Quantity;
+                                            currentDayTotal=rows[0].DayTotal;
+                                        }
+                                        
+                                        
+                                        var newEntry=Things["47364.GIMS.ProductDetails.DataTable"].CreateValues();
+                                        newEntry.ProductID=ProductID;
+                                        newEntry.ProductName=ProductName;
+                                        newEntry.ProductQuantity=currentQuantity;
+                                        newEntry.Status="In Stock";
+                                        newEntry.DayTotal=currentDayTotal;
+                                        Things["47364.GIMS.ProductDetails.DataTable"].AddOrUpdateDataTableEntries({
+                                            tags: undefined /* TAGS */,
+                                            location: undefined /* LOCATION */,
+                                            source: undefined /* STRING */,
+                                            sourceType: undefined /* STRING */,
+                                            values: newEntry /* INFOTABLE */
+                                        });
+                                        //hello
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                </ServiceImplementations>
+                <Subscriptions></Subscriptions>
+            </ThingShape>
+            <ImplementedShapes>
+                <ImplementedShape
+                 name="47364.GIMS.Services.ThingShape"
+                 type="ThingShape"></ImplementedShape>
+            </ImplementedShapes>
+            <SharedConfigurationTables></SharedConfigurationTables>
+            <InstanceDesignTimePermissions>
+                <Create></Create>
+                <Read></Read>
+                <Update></Update>
+                <Delete></Delete>
+                <Metadata></Metadata>
+            </InstanceDesignTimePermissions>
+            <InstanceRunTimePermissions></InstanceRunTimePermissions>
+            <InstanceVisibilityPermissions>
+                <Visibility>
+                    <Principal
+                     isPermitted="true"
+                     name="47364.GIMS.Organization"
+                     type="Organization"></Principal>
+                </Visibility>
+            </InstanceVisibilityPermissions>
+        </ThingTemplate>
+    </ThingTemplates>
+</Entities>

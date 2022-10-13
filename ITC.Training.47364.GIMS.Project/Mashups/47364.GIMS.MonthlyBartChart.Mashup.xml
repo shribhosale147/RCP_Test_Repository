@@ -1,0 +1,1479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities
+ majorVersion="9"
+ minorVersion="3"
+ universal="password">
+    <Mashups>
+        <Mashup
+         aspect.isFlex="true"
+         aspect.isResponsive="true"
+         aspect.mashupType="mashup"
+         columns="0.0"
+         description=""
+         documentationContent=""
+         homeMashup=""
+         name="47364.GIMS.MonthlyBartChart.Mashup"
+         projectName="ITC.Training.47364.GIMS.Project"
+         rows="0.0"
+         tags="">
+            <avatar></avatar>
+            <DesignTimePermissions>
+                <Create></Create>
+                <Read></Read>
+                <Update></Update>
+                <Delete></Delete>
+                <Metadata></Metadata>
+            </DesignTimePermissions>
+            <RunTimePermissions>
+                <Permissions
+                 resourceName="*">
+                    <PropertyRead>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Admin.UserGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Worker.UserGroup"
+                         type="Group"></Principal>
+                    </PropertyRead>
+                    <PropertyWrite>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Admin.UserGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Worker.UserGroup"
+                         type="Group"></Principal>
+                    </PropertyWrite>
+                    <ServiceInvoke>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Admin.UserGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Worker.UserGroup"
+                         type="Group"></Principal>
+                    </ServiceInvoke>
+                    <EventInvoke>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Admin.UserGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Worker.UserGroup"
+                         type="Group"></Principal>
+                    </EventInvoke>
+                    <EventSubscribe>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Admin.UserGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Worker.UserGroup"
+                         type="Group"></Principal>
+                    </EventSubscribe>
+                </Permissions>
+            </RunTimePermissions>
+            <VisibilityPermissions>
+                <Visibility>
+                    <Principal
+                     isPermitted="true"
+                     name="47364.GIMS.Organization"
+                     type="Organization"></Principal>
+                </Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
+            <ConfigurationTables>
+                <ConfigurationTable
+                 dataShapeName=""
+                 description="Mashup Mobile Settings"
+                 isHidden="true"
+                 isMultiRow="false"
+                 name="MobileSettings"
+                 ordinal="0">
+                    <DataShape>
+                        <FieldDefinitions>
+                            <FieldDefinition
+                             aspect.defaultValue="false"
+                             aspect.friendlyName="Disable Zoom"
+                             baseType="BOOLEAN"
+                             description="Disables zooming in and out within the mashup"
+                             name="disableZoom"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="true"
+                             aspect.friendlyName="Full Screen Mode"
+                             baseType="BOOLEAN"
+                             description="Open the mashup in full screen mode"
+                             name="fullScreenMode"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.friendlyName="Height"
+                             baseType="STRING"
+                             description="The height of the mashup page"
+                             name="height"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="device-height"
+                             aspect.friendlyName="Height Type"
+                             baseType="STRING"
+                             description="Use the height of the device display, or a custom height (in px)"
+                             name="heightType"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="1.0"
+                             aspect.friendlyName="Initial Scale"
+                             baseType="NUMBER"
+                             description="The initial zoom scale when the mashup is loaded for the first time"
+                             name="initialScale"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.friendlyName="Shortcut Icon Title"
+                             baseType="STRING"
+                             description="A title for the mashup shortcut on the iOS home screen"
+                             name="iosShortcutIconTitle"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="black-translucent"
+                             aspect.friendlyName="Status Bar Appearance"
+                             baseType="STRING"
+                             description="The style of the iOS status bar"
+                             name="iosStatusBarAppearance"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="10.0"
+                             aspect.friendlyName="Maximum Scale"
+                             baseType="NUMBER"
+                             description="The maximum scale that users can zoom out to"
+                             name="maximumScale"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="0.1"
+                             aspect.friendlyName="Minimum Scale"
+                             baseType="NUMBER"
+                             description="The minimum scale that users can zoom out to"
+                             name="minimumScale"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.friendlyName="Width"
+                             baseType="STRING"
+                             description="The width of the mashup page"
+                             name="width"
+                             ordinal="0"></FieldDefinition>
+                            <FieldDefinition
+                             aspect.defaultValue="device-width"
+                             aspect.friendlyName="Width Type"
+                             baseType="STRING"
+                             description="Use the width of the device display, or a custom width (in px)"
+                             name="widthType"
+                             ordinal="0"></FieldDefinition>
+                        </FieldDefinitions>
+                    </DataShape>
+                    <Rows>
+                        <Row>
+                            <disableZoom>false</disableZoom>
+                            <fullScreenMode>true</fullScreenMode>
+                            <height>
+                            <![CDATA[
+                            device-height
+                            ]]>
+                            </height>
+                            <heightType>
+                            <![CDATA[
+                            device-height
+                            ]]>
+                            </heightType>
+                            <initialScale>1.0</initialScale>
+                            <iosShortcutIconTitle></iosShortcutIconTitle>
+                            <iosStatusBarAppearance>
+                            <![CDATA[
+                            black-translucent
+                            ]]>
+                            </iosStatusBarAppearance>
+                            <maximumScale>10.0</maximumScale>
+                            <minimumScale>0.1</minimumScale>
+                            <width>
+                            <![CDATA[
+                            device-width
+                            ]]>
+                            </width>
+                            <widthType>
+                            <![CDATA[
+                            device-width
+                            ]]>
+                            </widthType>
+                        </Row>
+                    </Rows>
+                </ConfigurationTable>
+            </ConfigurationTables>
+            <ParameterDefinitions></ParameterDefinitions>
+            <Things></Things>
+            <ThingShapes></ThingShapes>
+            <ThingTemplates></ThingTemplates>
+            <mashupContent>
+            <![CDATA[
+            {
+              "CustomMashupCss" : ".widget-content.widget-flexcontainer {\n    border-style: none;\n    border-width: 0px;\n    border-radius: initial;\n    background: #ffffff;\n    border-color: inherit;\n}",
+              "Data" : {
+                "Session" : {
+                  "DataName" : "Session",
+                  "EntityName" : "",
+                  "EntityType" : "Session",
+                  "Id" : "session",
+                  "Services" : [ {
+                    "APIMethod" : "post",
+                    "Characteristic" : "Services",
+                    "Id" : "SessionInterface",
+                    "Name" : "GetGlobalSessionValues",
+                    "Parameters" : { },
+                    "RefreshInterval" : 0,
+                    "Target" : "GetGlobalSessionValues"
+                  } ]
+                },
+                "Things_47364.GIMS.Services.Thing" : {
+                  "DataName" : "Things_47364.GIMS.Services.Thing",
+                  "EntityName" : "47364.GIMS.Services.Thing",
+                  "EntityType" : "Things",
+                  "Id" : "85aa69f1-15cd-4989-8581-858ac9095f43",
+                  "RefreshInterval" : 0,
+                  "Services" : [ {
+                    "APIMethod" : "post",
+                    "Characteristic" : "Services",
+                    "Id" : "05bd2276-475c-4651-ae9e-9fe278940c13",
+                    "Name" : "GetDateMonth",
+                    "Parameters" : { },
+                    "RefreshInterval" : 0,
+                    "Target" : "GetDateMonth"
+                  }, {
+                    "APIMethod" : "post",
+                    "Characteristic" : "Services",
+                    "Id" : "b82c8137-da3e-4f51-8173-e15ef15fcc1b",
+                    "Name" : "GetDateYear",
+                    "Parameters" : { },
+                    "RefreshInterval" : 0,
+                    "Target" : "GetDateYear"
+                  }, {
+                    "APIMethod" : "post",
+                    "Characteristic" : "Services",
+                    "Id" : "aaa82fa3-ceb1-48bf-bb60-a52c85db0f09",
+                    "Name" : "GetMonthlyDataTableEntries",
+                    "Parameters" : { },
+                    "RefreshInterval" : 0,
+                    "Target" : "GetMonthlyDataTableEntries"
+                  } ]
+                },
+                "Things_47364.GIMS.Stock.DataTable" : {
+                  "DataName" : "Things_47364.GIMS.Stock.DataTable",
+                  "EntityName" : "47364.GIMS.Stock.DataTable",
+                  "EntityType" : "Things",
+                  "Id" : "0ef651bc-fcb9-4612-b7dc-8904239172e1",
+                  "RefreshInterval" : 0,
+                  "Services" : [ {
+                    "APIMethod" : "post",
+                    "Characteristic" : "Services",
+                    "Id" : "24d335d8-c191-4d51-8f8b-3235bf6d7968",
+                    "Name" : "GetDataTableEntries",
+                    "Parameters" : { },
+                    "RefreshInterval" : 0,
+                    "Target" : "GetDataTableEntries"
+                  } ]
+                },
+                "UserExtensions" : {
+                  "DataName" : "UserExtensions",
+                  "EntityName" : "",
+                  "EntityType" : "UserExtensions",
+                  "Id" : "UserExtensions",
+                  "Services" : [ {
+                    "APIMethod" : "post",
+                    "Characteristic" : "Services",
+                    "Id" : "UserExtensionInterface",
+                    "Name" : "GetCurrentUserExtensionProperties",
+                    "Parameters" : { },
+                    "RefreshInterval" : 0,
+                    "Target" : "GetCurrentUserExtensionProperties"
+                  } ]
+                }
+              },
+              "DataBindings" : [ {
+                "Id" : "e2285aa6-fdb7-4400-acf8-55152bd75295",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "",
+                  "SourcePropertyBaseType" : "INFOTABLE",
+                  "SourcePropertyType" : "InfoTable",
+                  "TargetProperty" : "Data",
+                  "TargetPropertyBaseType" : "INFOTABLE",
+                  "TargetPropertyType" : "property"
+                } ],
+                "SourceArea" : "Data",
+                "SourceDetails" : "AllData",
+                "SourceId" : "GetDataTableEntries",
+                "SourceSection" : "Things_47364.GIMS.Stock.DataTable",
+                "TargetArea" : "UI",
+                "TargetId" : "ptcsdropdown-17",
+                "TargetSection" : ""
+              }, {
+                "Id" : "9637e814-588a-4570-b11d-be8bfafe73d2",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "",
+                  "SourcePropertyBaseType" : "INFOTABLE",
+                  "SourcePropertyType" : "InfoTable",
+                  "TargetProperty" : "Data",
+                  "TargetPropertyBaseType" : "INFOTABLE",
+                  "TargetPropertyType" : "property"
+                } ],
+                "SourceArea" : "Data",
+                "SourceDetails" : "AllData",
+                "SourceId" : "GetDateMonth",
+                "SourceSection" : "Things_47364.GIMS.Services.Thing",
+                "TargetArea" : "UI",
+                "TargetId" : "ptcsdropdown-11",
+                "TargetSection" : ""
+              }, {
+                "Id" : "792bb70e-17f1-4195-a7a6-bcc3ae9d431a",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "",
+                  "SourcePropertyBaseType" : "INFOTABLE",
+                  "SourcePropertyType" : "InfoTable",
+                  "TargetProperty" : "Data",
+                  "TargetPropertyBaseType" : "INFOTABLE",
+                  "TargetPropertyType" : "property"
+                } ],
+                "SourceArea" : "Data",
+                "SourceDetails" : "AllData",
+                "SourceId" : "GetDateYear",
+                "SourceSection" : "Things_47364.GIMS.Services.Thing",
+                "TargetArea" : "UI",
+                "TargetId" : "ptcsdropdown-12",
+                "TargetSection" : ""
+              }, {
+                "Id" : "904b007d-5283-4378-a116-f69d409e7538",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "SelectedText",
+                  "SourcePropertyBaseType" : "STRING",
+                  "SourcePropertyType" : "Property",
+                  "TargetProperty" : "Month",
+                  "TargetPropertyBaseType" : "NUMBER",
+                  "TargetPropertyType" : "Parameter"
+                } ],
+                "SourceArea" : "UI",
+                "SourceDetails" : "",
+                "SourceId" : "ptcsdropdown-11",
+                "SourceSection" : "",
+                "TargetArea" : "Data",
+                "TargetId" : "GetMonthlyDataTableEntries",
+                "TargetSection" : "Things_47364.GIMS.Services.Thing"
+              }, {
+                "Id" : "35c34bec-8049-43ff-9784-ff8007bb12f2",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "SelectedText",
+                  "SourcePropertyBaseType" : "STRING",
+                  "SourcePropertyType" : "Property",
+                  "TargetProperty" : "Year",
+                  "TargetPropertyBaseType" : "NUMBER",
+                  "TargetPropertyType" : "Parameter"
+                } ],
+                "SourceArea" : "UI",
+                "SourceDetails" : "",
+                "SourceId" : "ptcsdropdown-12",
+                "SourceSection" : "",
+                "TargetArea" : "Data",
+                "TargetId" : "GetMonthlyDataTableEntries",
+                "TargetSection" : "Things_47364.GIMS.Services.Thing"
+              }, {
+                "Id" : "eaf0a5ba-d559-4944-8aed-3bdafe214cfa",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "SelectedText",
+                  "SourcePropertyBaseType" : "STRING",
+                  "SourcePropertyType" : "Property",
+                  "TargetProperty" : "ProductName",
+                  "TargetPropertyBaseType" : "STRING",
+                  "TargetPropertyType" : "Parameter"
+                } ],
+                "SourceArea" : "UI",
+                "SourceDetails" : "",
+                "SourceId" : "ptcsdropdown-17",
+                "SourceSection" : "",
+                "TargetArea" : "Data",
+                "TargetId" : "GetMonthlyDataTableEntries",
+                "TargetSection" : "Things_47364.GIMS.Services.Thing"
+              }, {
+                "Id" : "dc5baab5-3a0a-401d-a6ad-c2e289bca2da",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "",
+                  "SourcePropertyBaseType" : "INFOTABLE",
+                  "SourcePropertyType" : "InfoTable",
+                  "TargetProperty" : "Data",
+                  "TargetPropertyBaseType" : "INFOTABLE",
+                  "TargetPropertyType" : "property"
+                } ],
+                "SourceArea" : "Data",
+                "SourceDetails" : "AllData",
+                "SourceId" : "GetMonthlyDataTableEntries",
+                "SourceSection" : "Things_47364.GIMS.Services.Thing",
+                "TargetArea" : "UI",
+                "TargetId" : "ptcschartbar-10",
+                "TargetSection" : ""
+              }, {
+                "Id" : "98449a81-79b5-45e7-bdb4-9ade73edcd8e",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "Output",
+                  "SourcePropertyBaseType" : "STRING",
+                  "SourcePropertyType" : "Property",
+                  "TargetProperty" : "LabelText",
+                  "TargetPropertyBaseType" : "STRING",
+                  "TargetPropertyType" : "property"
+                } ],
+                "SourceArea" : "UI",
+                "SourceId" : "expression2-24",
+                "SourceSection" : "",
+                "TargetArea" : "UI",
+                "TargetId" : "ptcslabel-22",
+                "TargetSection" : ""
+              }, {
+                "Id" : "bf8d5567-d94b-4559-b56e-9ca8bc1afbb6",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "SelectedText",
+                  "SourcePropertyBaseType" : "STRING",
+                  "SourcePropertyType" : "Property",
+                  "TargetProperty" : "month",
+                  "TargetPropertyBaseType" : "NUMBER",
+                  "TargetPropertyType" : "property"
+                } ],
+                "SourceArea" : "UI",
+                "SourceDetails" : "",
+                "SourceId" : "ptcsdropdown-11",
+                "SourceSection" : "",
+                "TargetArea" : "UI",
+                "TargetId" : "expression2-24",
+                "TargetSection" : ""
+              }, {
+                "Id" : "a69e9180-9062-42fa-ad7f-27692919f0d3",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "SelectedText",
+                  "SourcePropertyBaseType" : "STRING",
+                  "SourcePropertyType" : "Property",
+                  "TargetProperty" : "year",
+                  "TargetPropertyBaseType" : "NUMBER",
+                  "TargetPropertyType" : "property"
+                } ],
+                "SourceArea" : "UI",
+                "SourceDetails" : "",
+                "SourceId" : "ptcsdropdown-12",
+                "SourceSection" : "",
+                "TargetArea" : "UI",
+                "TargetId" : "expression2-24",
+                "TargetSection" : ""
+              }, {
+                "Id" : "58636f52-cb20-436a-a375-53975a4f0fc4",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "SelectedText",
+                  "SourcePropertyBaseType" : "STRING",
+                  "SourcePropertyType" : "Property",
+                  "TargetProperty" : "name",
+                  "TargetPropertyBaseType" : "STRING",
+                  "TargetPropertyType" : "property"
+                } ],
+                "SourceArea" : "UI",
+                "SourceDetails" : "",
+                "SourceId" : "ptcsdropdown-17",
+                "SourceSection" : "",
+                "TargetArea" : "UI",
+                "TargetId" : "expression2-24",
+                "TargetSection" : ""
+              }, {
+                "Id" : "3d24475f-a2ab-4777-aaa3-8b56161992bd",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "SelectedText",
+                  "SourcePropertyBaseType" : "STRING",
+                  "SourcePropertyType" : "Property",
+                  "TargetProperty" : "month",
+                  "TargetPropertyBaseType" : "NUMBER",
+                  "TargetPropertyType" : "property"
+                } ],
+                "SourceArea" : "UI",
+                "SourceDetails" : "",
+                "SourceId" : "ptcsdropdown-11",
+                "SourceSection" : "",
+                "TargetArea" : "UI",
+                "TargetId" : "validator2-23",
+                "TargetSection" : ""
+              }, {
+                "Id" : "dabac8ed-ca0c-4639-868f-106d411863b3",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "SelectedText",
+                  "SourcePropertyBaseType" : "STRING",
+                  "SourcePropertyType" : "Property",
+                  "TargetProperty" : "year",
+                  "TargetPropertyBaseType" : "NUMBER",
+                  "TargetPropertyType" : "property"
+                } ],
+                "SourceArea" : "UI",
+                "SourceDetails" : "",
+                "SourceId" : "ptcsdropdown-12",
+                "SourceSection" : "",
+                "TargetArea" : "UI",
+                "TargetId" : "validator2-23",
+                "TargetSection" : ""
+              }, {
+                "Id" : "f3b6e368-cca6-4923-93fc-736fb4f8a8b7",
+                "PropertyMaps" : [ {
+                  "SourceProperty" : "SelectedText",
+                  "SourcePropertyBaseType" : "STRING",
+                  "SourcePropertyType" : "Property",
+                  "TargetProperty" : "name",
+                  "TargetPropertyBaseType" : "STRING",
+                  "TargetPropertyType" : "property"
+                } ],
+                "SourceArea" : "UI",
+                "SourceDetails" : "",
+                "SourceId" : "ptcsdropdown-17",
+                "SourceSection" : "",
+                "TargetArea" : "UI",
+                "TargetId" : "validator2-23",
+                "TargetSection" : ""
+              } ],
+              "DesignTimePermissions" : { },
+              "Events" : [ {
+                "EventHandlerArea" : "Data",
+                "EventHandlerId" : "Things_47364.GIMS.Stock.DataTable",
+                "EventHandlerService" : "GetDataTableEntries",
+                "EventTriggerArea" : "Mashup",
+                "EventTriggerEvent" : "Loaded",
+                "EventTriggerId" : "mashup-root",
+                "EventTriggerSection" : "",
+                "Id" : "7a862cf0-dc36-40ba-a642-05425ac0909d"
+              }, {
+                "EventHandlerArea" : "Data",
+                "EventHandlerId" : "Things_47364.GIMS.Services.Thing",
+                "EventHandlerService" : "GetDateMonth",
+                "EventTriggerArea" : "Mashup",
+                "EventTriggerEvent" : "Loaded",
+                "EventTriggerId" : "mashup-root",
+                "EventTriggerSection" : "",
+                "Id" : "c7de2c63-bced-4685-9b0b-282298a06121"
+              }, {
+                "EventHandlerArea" : "Data",
+                "EventHandlerId" : "Things_47364.GIMS.Services.Thing",
+                "EventHandlerService" : "GetDateYear",
+                "EventTriggerArea" : "Mashup",
+                "EventTriggerEvent" : "Loaded",
+                "EventTriggerId" : "mashup-root",
+                "EventTriggerSection" : "",
+                "Id" : "1726be78-7b2f-4a49-8da5-e444a45ee04c"
+              }, {
+                "EventHandlerArea" : "UI",
+                "EventHandlerId" : "validator2-23",
+                "EventHandlerService" : "Evaluate",
+                "EventTriggerArea" : "UI",
+                "EventTriggerEvent" : "Clicked",
+                "EventTriggerId" : "ptcsbutton-9",
+                "EventTriggerSection" : "",
+                "Id" : "c38f1080-b390-4fe8-abcf-e54f1a65ab50"
+              }, {
+                "EventHandlerArea" : "Data",
+                "EventHandlerId" : "Things_47364.GIMS.Services.Thing",
+                "EventHandlerService" : "GetMonthlyDataTableEntries",
+                "EventTriggerArea" : "UI",
+                "EventTriggerEvent" : "True",
+                "EventTriggerId" : "validator2-23",
+                "EventTriggerSection" : "",
+                "Id" : "12705992-4c08-467e-b13b-53a98a5dd5e8"
+              }, {
+                "EventHandlerArea" : "UI",
+                "EventHandlerId" : "expression2-24",
+                "EventHandlerService" : "Evaluate",
+                "EventTriggerArea" : "UI",
+                "EventTriggerEvent" : "False",
+                "EventTriggerId" : "validator2-23",
+                "EventTriggerSection" : "",
+                "Id" : "5cdd93f5-4bf9-4986-adac-db1ae701cca5"
+              }, {
+                "EventHandlerArea" : "UI",
+                "EventHandlerId" : "expression2-24",
+                "EventHandlerService" : "Evaluate",
+                "EventTriggerArea" : "UI",
+                "EventTriggerEvent" : "SelectedItemsChanged",
+                "EventTriggerId" : "ptcsdropdown-11",
+                "EventTriggerSection" : "",
+                "Id" : "f53111d3-0960-4f8b-8af2-a1df7fe2419a"
+              }, {
+                "EventHandlerArea" : "UI",
+                "EventHandlerId" : "expression2-24",
+                "EventHandlerService" : "Evaluate",
+                "EventTriggerArea" : "UI",
+                "EventTriggerEvent" : "SelectedItemsChanged",
+                "EventTriggerId" : "ptcsdropdown-12",
+                "EventTriggerSection" : "",
+                "Id" : "dd85dc8d-9bd3-46a5-9199-f72b6467d5fb"
+              }, {
+                "EventHandlerArea" : "UI",
+                "EventHandlerId" : "expression2-24",
+                "EventHandlerService" : "Evaluate",
+                "EventTriggerArea" : "UI",
+                "EventTriggerEvent" : "SelectedItemsChanged",
+                "EventTriggerId" : "ptcsdropdown-17",
+                "EventTriggerSection" : "",
+                "Id" : "ce9509e3-a4f7-49d6-85f8-62b8166f3a02"
+              }, {
+                "EventHandlerArea" : "UI",
+                "EventHandlerId" : "expression2-24",
+                "EventHandlerService" : "Evaluate",
+                "EventTriggerArea" : "Mashup",
+                "EventTriggerEvent" : "Loaded",
+                "EventTriggerId" : "mashup-root",
+                "EventTriggerSection" : "",
+                "Id" : "ca4853f4-397a-4e71-907a-78045a783b50"
+              } ],
+              "Reminders" : [ ],
+              "RunTimePermissions" : { },
+              "UI" : {
+                "Properties" : {
+                  "AddToDashboardButton" : "SimplePlus",
+                  "AddToDashboardButtonStyle" : "DefaultAddToDashboardButtonStyle",
+                  "Area" : "Mashup",
+                  "BGImage" : "",
+                  "BGImageRepeat" : "no-repeat",
+                  "BGImageSize" : "auto",
+                  "Columns" : 0,
+                  "ConfigureGadgetButton" : "SimpleGear",
+                  "ConfigureGadgetButtonStyle" : "DefaultConfigureGadgetButtonStyle",
+                  "DisplayName" : "Mashup",
+                  "EnableParameterEditing" : false,
+                  "Height" : 618,
+                  "Id" : "mashup-root",
+                  "IgnoreWarningsInViewMashup" : false,
+                  "IsPrintLayout" : false,
+                  "Left" : 0,
+                  "MashupToEditGadget" : "DefaultMashupToEditGadget",
+                  "MinHeight" : 0,
+                  "MinWidth" : 0,
+                  "ResponsiveLayout" : true,
+                  "Rows" : 0,
+                  "ShowDataLoading" : true,
+                  "Style" : "DefaultMashupStyle",
+                  "StyleProperties" : {
+                    "data" : {
+                      "ptcslabel-22" : {
+                        "parts" : {
+                          "label" : {
+                            "$" : {
+                              "color" : "rgba(191,48,48,1)"
+                            }
+                          }
+                        },
+                        "widget" : "ptcs-label"
+                      }
+                    },
+                    "meta" : {
+                      "type" : "WidgetStyler",
+                      "version" : "1.0"
+                    }
+                  },
+                  "StyleTheme" : "PTC Convergence Theme",
+                  "Title" : "",
+                  "TitleBar" : false,
+                  "TitleBarStyle" : "DefaultTitleBarStyle",
+                  "TitleBarText" : "Gadget Title Here",
+                  "Top" : 0,
+                  "Type" : "mashup",
+                  "UseMasterTheme" : false,
+                  "UseTheme" : false,
+                  "UseThemeForHybrids" : false,
+                  "Visible" : true,
+                  "Width" : 1024,
+                  "Z-index" : 10,
+                  "__TypeDisplayName" : "Mashup",
+                  "id_index" : 24,
+                  "secureExpressionsOnly" : true,
+                  "supportsAutoResize" : true
+                },
+                "Widgets" : [ {
+                  "Properties" : {
+                    "Area" : "UI",
+                    "DisplayName" : "container-2",
+                    "EnableContainerUnload" : false,
+                    "EnableExpandCollapse" : false,
+                    "ExpandCollapseTabLocation" : "inside",
+                    "Expanded" : true,
+                    "Id" : "flexcontainer-2",
+                    "LastContainer" : true,
+                    "LazyLoading" : false,
+                    "Overlay" : false,
+                    "ResponsiveLayout" : true,
+                    "Scrolling" : "auto-scroll",
+                    "ShowDataLoading" : true,
+                    "ShowExpandCollapseTab" : false,
+                    "SourceURL" : "",
+                    "Style" : "DefaultContainerStyle",
+                    "StyleProperties" : { },
+                    "Type" : "flexcontainer",
+                    "UseTheme" : true,
+                    "Visible" : true,
+                    "Z-index" : 10,
+                    "__TypeDisplayName" : "Responsive Container",
+                    "align-content" : "flex-start",
+                    "align-items" : "flex-start",
+                    "flex-basis" : "auto",
+                    "flex-direction" : "column",
+                    "flex-grow" : 1,
+                    "flex-max-height" : "",
+                    "flex-max-width" : "",
+                    "flex-min-height" : "",
+                    "flex-min-width" : "",
+                    "flex-shrink" : 1,
+                    "flex-size" : "default",
+                    "flex-wrap" : "nowrap",
+                    "iconClass" : "widgets-flexcontainer",
+                    "justify-content" : "flex-start",
+                    "positioning" : "responsive",
+                    "userCannotRemove" : true
+                  },
+                  "Widgets" : [ {
+                    "Properties" : {
+                      "Area" : "UI",
+                      "DisplayName" : "container-3",
+                      "EnableContainerUnload" : false,
+                      "EnableExpandCollapse" : false,
+                      "ExpandCollapseTabLocation" : "inside",
+                      "Expanded" : true,
+                      "Id" : "flexcontainer-3",
+                      "LastContainer" : false,
+                      "LazyLoading" : false,
+                      "Overlay" : false,
+                      "ResponsiveLayout" : false,
+                      "ShowDataLoading" : true,
+                      "ShowExpandCollapseTab" : false,
+                      "SourceURL" : "",
+                      "Style" : "DefaultContainerStyle",
+                      "StyleProperties" : { },
+                      "Type" : "flexcontainer",
+                      "UseTheme" : true,
+                      "Visible" : true,
+                      "Z-index" : 10,
+                      "__TypeDisplayName" : "Responsive Container",
+                      "align-content" : "flex-start",
+                      "align-items" : "flex-start",
+                      "flex-basis" : "auto",
+                      "flex-direction" : "row",
+                      "flex-grow" : 1,
+                      "flex-max-height" : "60px",
+                      "flex-max-width" : "",
+                      "flex-min-height" : "60px",
+                      "flex-min-width" : "",
+                      "flex-shrink" : 1,
+                      "flex-size" : "fixed",
+                      "flex-wrap" : "nowrap",
+                      "iconClass" : "widgets-flexcontainer-fixed",
+                      "isLocked" : false,
+                      "justify-content" : "center",
+                      "positioning" : "responsive",
+                      "userCannotRemove" : false
+                    },
+                    "Widgets" : [ {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisclosureControl" : "show-more",
+                        "DisplayName" : "ptcs-label-6",
+                        "Height" : 42,
+                        "HorizontalAlignment" : "left",
+                        "Id" : "ptcslabel-6",
+                        "LabelText" : "Monthly Sales Chart",
+                        "LabelType" : "large-header",
+                        "LastContainer" : false,
+                        "Left" : 119,
+                        "Margin" : "5",
+                        "MultiLine" : true,
+                        "PreserveWhiteSpace" : false,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "Top" : 36,
+                        "Type" : "ptcslabel",
+                        "UseTheme" : true,
+                        "VerticalAlignment" : "flex-start",
+                        "Visible" : true,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Label",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    } ]
+                  }, {
+                    "Properties" : {
+                      "Area" : "UI",
+                      "DisplayName" : "container-4",
+                      "EnableContainerUnload" : false,
+                      "EnableExpandCollapse" : false,
+                      "ExpandCollapseTabLocation" : "inside",
+                      "Expanded" : true,
+                      "Id" : "flexcontainer-4",
+                      "LastContainer" : false,
+                      "LazyLoading" : false,
+                      "Overlay" : false,
+                      "ResponsiveLayout" : true,
+                      "ShowDataLoading" : true,
+                      "ShowExpandCollapseTab" : false,
+                      "SourceURL" : "",
+                      "Style" : "DefaultContainerStyle",
+                      "StyleProperties" : { },
+                      "Type" : "flexcontainer",
+                      "UseTheme" : true,
+                      "Visible" : true,
+                      "Z-index" : 10,
+                      "__TypeDisplayName" : "Responsive Container",
+                      "align-content" : "flex-start",
+                      "align-items" : "center",
+                      "flex-basis" : "auto",
+                      "flex-direction" : "row",
+                      "flex-grow" : 1,
+                      "flex-max-height" : "70px",
+                      "flex-max-width" : "",
+                      "flex-min-height" : "70px",
+                      "flex-min-width" : "",
+                      "flex-shrink" : 1,
+                      "flex-size" : "fixed",
+                      "flex-wrap" : "nowrap",
+                      "iconClass" : "widgets-flexcontainer-fixed",
+                      "isLocked" : false,
+                      "justify-content" : "center",
+                      "positioning" : "responsive",
+                      "userCannotRemove" : false
+                    },
+                    "Widgets" : [ {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisclosureControl" : "show-more",
+                        "DisplayName" : "ptcs-label-13",
+                        "HorizontalAlignment" : "left",
+                        "Id" : "ptcslabel-13",
+                        "LabelText" : "Month:",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 29,
+                        "Margin" : "5",
+                        "MultiLine" : true,
+                        "PreserveWhiteSpace" : false,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "Top" : 21,
+                        "Type" : "ptcslabel",
+                        "UseTheme" : true,
+                        "VerticalAlignment" : "flex-start",
+                        "Visible" : true,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Label",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Alignment" : "left",
+                        "AllLabel" : "[[all]]",
+                        "Area" : "UI",
+                        "AutoSelectFirstRow" : false,
+                        "ClearSelectedItemsLabel" : "[[clearSelectedItems]]",
+                        "ClearSelectionItem" : true,
+                        "ClearSelectionLabel" : "[[None]]",
+                        "Disabled" : false,
+                        "DisplayField" : "Month",
+                        "DisplayFieldBaseType" : "NUMBER",
+                        "DisplayName" : "ptcs-dropdown-11",
+                        "FilterHintText" : "Filter",
+                        "HintText" : "[[Select]]",
+                        "Id" : "ptcsdropdown-11",
+                        "ItemMeta" : {
+                          "type" : "text"
+                        },
+                        "Label" : "",
+                        "LabelAlignment" : "left",
+                        "LastContainer" : false,
+                        "Left" : 24,
+                        "ListFormat_StateParameters" : [ ],
+                        "ListMarginTop" : 8,
+                        "Margin" : "5",
+                        "MultiSelect" : false,
+                        "ResponsiveLayout" : false,
+                        "RowHeight" : 34,
+                        "SelectAllLabel" : "[[selectAll]]",
+                        "SelectedLabel" : "[[selected]]",
+                        "ShowDataLoading" : true,
+                        "ShowListFilter" : true,
+                        "TabSequence" : 0,
+                        "Top" : 21,
+                        "Type" : "ptcsdropdown",
+                        "UseTheme" : true,
+                        "Visible" : true,
+                        "Width" : 88,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "DropDown"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisclosureControl" : "show-more",
+                        "DisplayName" : "ptcs-label-14",
+                        "HorizontalAlignment" : "left",
+                        "Id" : "ptcslabel-14",
+                        "LabelText" : "Year:",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 69,
+                        "Margin" : "5",
+                        "MultiLine" : true,
+                        "PreserveWhiteSpace" : false,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "Top" : 26,
+                        "Type" : "ptcslabel",
+                        "UseTheme" : true,
+                        "VerticalAlignment" : "flex-start",
+                        "Visible" : true,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Label",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Alignment" : "left",
+                        "AllLabel" : "[[all]]",
+                        "Area" : "UI",
+                        "AutoSelectFirstRow" : false,
+                        "ClearSelectedItemsLabel" : "[[clearSelectedItems]]",
+                        "ClearSelectionItem" : true,
+                        "ClearSelectionLabel" : "[[None]]",
+                        "Disabled" : false,
+                        "DisplayField" : "Year",
+                        "DisplayFieldBaseType" : "NUMBER",
+                        "DisplayName" : "ptcs-dropdown-12",
+                        "FilterHintText" : "Search",
+                        "HintText" : "Select Year",
+                        "Id" : "ptcsdropdown-12",
+                        "ItemMeta" : {
+                          "type" : "text"
+                        },
+                        "Label" : "",
+                        "LabelAlignment" : "left",
+                        "LastContainer" : false,
+                        "Left" : 309,
+                        "ListFormat_StateParameters" : [ ],
+                        "ListMarginTop" : 8,
+                        "Margin" : "5",
+                        "MultiSelect" : false,
+                        "ResponsiveLayout" : false,
+                        "RowHeight" : 34,
+                        "SelectAllLabel" : "[[selectAll]]",
+                        "SelectedLabel" : "[[selected]]",
+                        "ShowDataLoading" : true,
+                        "ShowListFilter" : true,
+                        "TabSequence" : 0,
+                        "Top" : 11,
+                        "Type" : "ptcsdropdown",
+                        "UseTheme" : true,
+                        "Visible" : true,
+                        "Width" : 83,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "DropDown"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisclosureControl" : "show-more",
+                        "DisplayName" : "ptcs-label-15",
+                        "HorizontalAlignment" : "left",
+                        "Id" : "ptcslabel-15",
+                        "LabelText" : "Product Name:",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 184,
+                        "Margin" : "5",
+                        "MultiLine" : true,
+                        "PreserveWhiteSpace" : false,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "Top" : 31,
+                        "Type" : "ptcslabel",
+                        "UseTheme" : true,
+                        "VerticalAlignment" : "flex-start",
+                        "Visible" : true,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Label",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Alignment" : "left",
+                        "AllLabel" : "[[all]]",
+                        "Area" : "UI",
+                        "AutoSelectFirstRow" : false,
+                        "ClearSelectedItemsLabel" : "[[clearSelectedItems]]",
+                        "ClearSelectionItem" : true,
+                        "ClearSelectionLabel" : "[[None]]",
+                        "Disabled" : false,
+                        "DisplayField" : "ProductName",
+                        "DisplayFieldBaseType" : "STRING",
+                        "DisplayName" : "ptcs-dropdown-17",
+                        "FilterHintText" : "Filter",
+                        "HintText" : "Select Product",
+                        "Id" : "ptcsdropdown-17",
+                        "ItemMeta" : {
+                          "type" : "text"
+                        },
+                        "Label" : "",
+                        "LabelAlignment" : "left",
+                        "LastContainer" : false,
+                        "Left" : 309,
+                        "ListFormat_StateParameters" : [ ],
+                        "ListMarginTop" : 8,
+                        "Margin" : "5",
+                        "MultiSelect" : false,
+                        "ResponsiveLayout" : false,
+                        "RowHeight" : 34,
+                        "SelectAllLabel" : "[[selectAll]]",
+                        "SelectedLabel" : "[[selected]]",
+                        "ShowDataLoading" : true,
+                        "ShowListFilter" : true,
+                        "TabSequence" : 0,
+                        "Top" : 46,
+                        "Type" : "ptcsdropdown",
+                        "UseTheme" : true,
+                        "Visible" : true,
+                        "Width" : 168,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "DropDown"
+                      },
+                      "Widgets" : [ ]
+                    }, {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "ButtonType" : "primary",
+                        "ContextID" : "",
+                        "Disabled" : false,
+                        "DisplayName" : "ptcs-button-9",
+                        "Id" : "ptcsbutton-9",
+                        "Label" : "Go",
+                        "LabelAlignment" : "center",
+                        "LastContainer" : false,
+                        "Left" : 69,
+                        "Margin" : "5",
+                        "MultiLine" : false,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "TabSequence" : 0,
+                        "Top" : 51,
+                        "Type" : "ptcsbutton",
+                        "UseTheme" : true,
+                        "Visible" : true,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Button"
+                      },
+                      "Widgets" : [ ]
+                    } ]
+                  }, {
+                    "Properties" : {
+                      "Area" : "UI",
+                      "DisplayName" : "container-21",
+                      "EnableContainerUnload" : false,
+                      "EnableExpandCollapse" : false,
+                      "ExpandCollapseTabLocation" : "inside",
+                      "Expanded" : true,
+                      "Id" : "flexcontainer-21",
+                      "LastContainer" : false,
+                      "LazyLoading" : false,
+                      "Overlay" : false,
+                      "ResponsiveLayout" : true,
+                      "ShowDataLoading" : true,
+                      "ShowExpandCollapseTab" : false,
+                      "SourceURL" : "",
+                      "Style" : "DefaultContainerStyle",
+                      "StyleProperties" : { },
+                      "Type" : "flexcontainer",
+                      "UseTheme" : true,
+                      "Visible" : true,
+                      "Z-index" : 10,
+                      "__TypeDisplayName" : "Responsive Container",
+                      "align-content" : "flex-start",
+                      "align-items" : "flex-start",
+                      "flex-basis" : "auto",
+                      "flex-direction" : "row",
+                      "flex-grow" : 1,
+                      "flex-max-height" : "30px",
+                      "flex-max-width" : "",
+                      "flex-min-height" : "30px",
+                      "flex-min-width" : "",
+                      "flex-shrink" : 1,
+                      "flex-size" : "fixed",
+                      "flex-wrap" : "nowrap",
+                      "iconClass" : "widgets-flexcontainer-fixed",
+                      "isLocked" : false,
+                      "justify-content" : "center",
+                      "positioning" : "responsive",
+                      "userCannotRemove" : false
+                    },
+                    "Widgets" : [ {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "DisclosureControl" : "show-more",
+                        "DisplayName" : "ptcs-label-22",
+                        "HorizontalAlignment" : "left",
+                        "Id" : "ptcslabel-22",
+                        "LabelText" : "[[Label]]",
+                        "LabelType" : "label",
+                        "LastContainer" : false,
+                        "Left" : 164,
+                        "Margin" : "5",
+                        "MultiLine" : true,
+                        "PreserveWhiteSpace" : false,
+                        "ResponsiveLayout" : false,
+                        "ShowDataLoading" : true,
+                        "Top" : 11,
+                        "Type" : "ptcslabel",
+                        "UseTheme" : true,
+                        "VerticalAlignment" : "flex-start",
+                        "Visible" : true,
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Label",
+                        "overflowShowLessTxt" : "[[showLess]]",
+                        "overflowShowMoreTxt" : "[[showMore]]"
+                      },
+                      "Widgets" : [ ]
+                    } ]
+                  }, {
+                    "Properties" : {
+                      "Area" : "UI",
+                      "DisplayName" : "container-5",
+                      "EnableContainerUnload" : false,
+                      "EnableExpandCollapse" : false,
+                      "ExpandCollapseTabLocation" : "inside",
+                      "Expanded" : true,
+                      "Id" : "flexcontainer-5",
+                      "LastContainer" : true,
+                      "LazyLoading" : false,
+                      "Overlay" : false,
+                      "ResponsiveLayout" : false,
+                      "Scrolling" : "auto-scroll",
+                      "ShowDataLoading" : true,
+                      "ShowExpandCollapseTab" : false,
+                      "SourceURL" : "",
+                      "Style" : "DefaultContainerStyle",
+                      "StyleProperties" : { },
+                      "Type" : "flexcontainer",
+                      "UseTheme" : true,
+                      "Visible" : true,
+                      "Z-index" : 10,
+                      "__TypeDisplayName" : "Responsive Container",
+                      "align-content" : "flex-start",
+                      "align-items" : "flex-start",
+                      "flex-basis" : "auto",
+                      "flex-direction" : "row",
+                      "flex-grow" : 1,
+                      "flex-max-height" : "",
+                      "flex-max-width" : "",
+                      "flex-min-height" : "",
+                      "flex-min-width" : "",
+                      "flex-shrink" : 1,
+                      "flex-size" : "default",
+                      "flex-wrap" : "nowrap",
+                      "iconClass" : "widgets-flexcontainer",
+                      "isLocked" : true,
+                      "justify-content" : "flex-start",
+                      "positioning" : "responsive",
+                      "userCannotRemove" : false
+                    },
+                    "Widgets" : [ {
+                      "Properties" : {
+                        "Area" : "UI",
+                        "ChartType" : "column",
+                        "DataField1" : "ProductQuantity",
+                        "DataLabel1" : "Product Quantity",
+                        "DataLabel10" : "",
+                        "DataLabel11" : "",
+                        "DataLabel12" : "",
+                        "DataLabel13" : "",
+                        "DataLabel14" : "",
+                        "DataLabel15" : "",
+                        "DataLabel16" : "",
+                        "DataLabel17" : "",
+                        "DataLabel18" : "",
+                        "DataLabel19" : "",
+                        "DataLabel2" : "",
+                        "DataLabel20" : "",
+                        "DataLabel21" : "",
+                        "DataLabel22" : "",
+                        "DataLabel23" : "",
+                        "DataLabel24" : "",
+                        "DataLabel3" : "",
+                        "DataLabel4" : "",
+                        "DataLabel5" : "",
+                        "DataLabel6" : "",
+                        "DataLabel7" : "",
+                        "DataLabel8" : "",
+                        "DataLabel9" : "",
+                        "DataSeriesStyle10_StateParameters" : [ ],
+                        "DataSeriesStyle11_StateParameters" : [ ],
+                        "DataSeriesStyle12_StateParameters" : [ ],
+                        "DataSeriesStyle13_StateParameters" : [ ],
+                        "DataSeriesStyle14_StateParameters" : [ ],
+                        "DataSeriesStyle15_StateParameters" : [ ],
+                        "DataSeriesStyle16_StateParameters" : [ ],
+                        "DataSeriesStyle17_StateParameters" : [ ],
+                        "DataSeriesStyle18_StateParameters" : [ ],
+                        "DataSeriesStyle19_StateParameters" : [ ],
+                        "DataSeriesStyle1_StateParameters" : [ ],
+                        "DataSeriesStyle20_StateParameters" : [ ],
+                        "DataSeriesStyle21_StateParameters" : [ ],
+                        "DataSeriesStyle22_StateParameters" : [ ],
+                        "DataSeriesStyle23_StateParameters" : [ ],
+                        "DataSeriesStyle24_StateParameters" : [ ],
+                        "DataSeriesStyle2_StateParameters" : [ ],
+                        "DataSeriesStyle3_StateParameters" : [ ],
+                        "DataSeriesStyle4_StateParameters" : [ ],
+                        "DataSeriesStyle5_StateParameters" : [ ],
+                        "DataSeriesStyle6_StateParameters" : [ ],
+                        "DataSeriesStyle7_StateParameters" : [ ],
+                        "DataSeriesStyle8_StateParameters" : [ ],
+                        "DataSeriesStyle9_StateParameters" : [ ],
+                        "DataSeriesStyle_StateParameters" : [ ],
+                        "DirectSelectionZoom" : "none",
+                        "Disabled" : false,
+                        "DisplayName" : "ptcs-chartbar-10",
+                        "DragSelectionZoom" : "none",
+                        "ExternalPadding" : 25,
+                        "GroupPadding" : 25,
+                        "Height" : 476,
+                        "HideLegend" : false,
+                        "HideNotes" : false,
+                        "HideValues" : false,
+                        "HideXAxis" : false,
+                        "HideYAxis" : false,
+                        "HorizontalAxisMaxHeight" : 85,
+                        "HorizontalEndZoomLabel" : "",
+                        "HorizontalIntervalAnchorPoint" : "start",
+                        "HorizontalIntervalAnchorPointLabel" : "",
+                        "HorizontalIntervalControl" : "none",
+                        "HorizontalIntervalControlLabel" : "",
+                        "HorizontalRangeZoom" : false,
+                        "HorizontalSliderZoom" : false,
+                        "HorizontalSliderZoomMaxLabel" : "",
+                        "HorizontalSliderZoomMinLabel" : "",
+                        "HorizontalStartZoomLabel" : "",
+                        "HorizontalZoom" : false,
+                        "Id" : "ptcschartbar-10",
+                        "InternalPadding" : 25,
+                        "Label" : null,
+                        "LabelAlignment" : "left",
+                        "LabelPosition" : "top",
+                        "LabelReset" : "Reset",
+                        "LabelType" : "sub-header",
+                        "LastContainer" : false,
+                        "Left" : 104,
+                        "LegendAlignment" : "start",
+                        "LegendFilter" : true,
+                        "LegendMarkerShapes" : "circle",
+                        "LegendMaxWidth" : 736,
+                        "LegendPosition" : "right",
+                        "MultipleDataSources" : false,
+                        "Notes" : "",
+                        "NotesAlignment" : "left",
+                        "NotesPosition" : "bottom",
+                        "NumberOfReferenceLines" : 0,
+                        "NumberOfSeries" : 1,
+                        "ResponsiveLayout" : true,
+                        "ReverseSecondYAxis" : false,
+                        "ReverseXAxis" : false,
+                        "ReverseYAxis" : false,
+                        "RulersInFront" : false,
+                        "SecondYAxis" : false,
+                        "SecondYAxisFormat" : "0000.0",
+                        "SecondYAxisLabel" : "[[SecondYAxis]]",
+                        "SecondYAxisLabelAlignment" : "center",
+                        "SecondYAxisSeriesDisplay" : "grouped",
+                        "SelectionMode" : "none",
+                        "SeriesDisplay" : "grouped",
+                        "ShowDataLoading" : true,
+                        "ShowHideLegend" : false,
+                        "ShowHorizontalAnchorPointControl" : false,
+                        "ShowXAxisRuler" : false,
+                        "ShowYAxisRuler" : false,
+                        "ShowZeroValueRuler" : false,
+                        "SparkView" : false,
+                        "StringClearAll" : "[[clearAll]]",
+                        "StringEnd" : "[[endRange]]",
+                        "StringHideLegend" : "[[hideLegend]]",
+                        "StringSelectAll" : "[[selectAll]]",
+                        "StringShowLegend" : "[[showLegend]]",
+                        "StringStart" : "[[startRange]]",
+                        "TabSequence" : 0,
+                        "Top" : 71,
+                        "Type" : "ptcschartbar",
+                        "UseSampleDataInRuntime" : false,
+                        "UseSecondYAxis1" : false,
+                        "UseSecondYAxis10" : false,
+                        "UseSecondYAxis11" : false,
+                        "UseSecondYAxis12" : false,
+                        "UseSecondYAxis13" : false,
+                        "UseSecondYAxis14" : false,
+                        "UseSecondYAxis15" : false,
+                        "UseSecondYAxis16" : false,
+                        "UseSecondYAxis17" : false,
+                        "UseSecondYAxis18" : false,
+                        "UseSecondYAxis19" : false,
+                        "UseSecondYAxis2" : false,
+                        "UseSecondYAxis20" : false,
+                        "UseSecondYAxis21" : false,
+                        "UseSecondYAxis22" : false,
+                        "UseSecondYAxis23" : false,
+                        "UseSecondYAxis24" : false,
+                        "UseSecondYAxis3" : false,
+                        "UseSecondYAxis4" : false,
+                        "UseSecondYAxis5" : false,
+                        "UseSecondYAxis6" : false,
+                        "UseSecondYAxis7" : false,
+                        "UseSecondYAxis8" : false,
+                        "UseSecondYAxis9" : false,
+                        "UseTheme" : true,
+                        "ValuesAlignment" : "end",
+                        "ValuesPosition" : "outside",
+                        "ValuesTooltip" : "[[BarChartDefaultTooltip]]",
+                        "VerticalAxisMaxWidth" : 85,
+                        "VerticalSliderZoom" : false,
+                        "VerticalSliderZoomMaxLabel" : "",
+                        "VerticalSliderZoomMinLabel" : "",
+                        "VerticalZoom" : false,
+                        "Visible" : true,
+                        "Width" : 471,
+                        "XAxisField" : "PDate",
+                        "XAxisLabel" : "Date",
+                        "XAxisLabelAlignment" : "center",
+                        "YAxisFormat" : "0000.0",
+                        "YAxisLabel" : "Product Quantity (Kg)",
+                        "YAxisLabelAlignment" : "center",
+                        "YAxisRulerAlignment" : "primary",
+                        "Z-index" : 10,
+                        "__TypeDisplayName" : "Bar Chart"
+                      },
+                      "Widgets" : [ ]
+                    } ]
+                  } ]
+                }, {
+                  "Properties" : {
+                    "Area" : "UI",
+                    "AutoEvaluate" : false,
+                    "DisplayName" : "barChartVal",
+                    "Expression" : "let num=/^[0-9]+$/;\nlet str=/^([a-zA-Z ]){2,30}$/;\nif(num.test(month) && num.test(year) && str.test(name)){\n\tresult=true;\n}else{\n\tresult=false;\n}",
+                    "Height" : 28,
+                    "Id" : "validator2-23",
+                    "LastContainer" : false,
+                    "Left" : null,
+                    "Output" : true,
+                    "ResponsiveLayout" : false,
+                    "ShowDataLoading" : true,
+                    "Top" : null,
+                    "Type" : "validator2",
+                    "Visible" : true,
+                    "Width" : 200,
+                    "Z-index" : 10,
+                    "__TypeDisplayName" : "Validator",
+                    "_currentParameterDefs" : [ {
+                      "BaseType" : "NUMBER",
+                      "Description" : "",
+                      "ParameterName" : "month",
+                      "bindingDirection" : "Target",
+                      "bindingType" : "Property",
+                      "isBindingSource" : false,
+                      "isBindingTarget" : true,
+                      "shown" : true
+                    }, {
+                      "BaseType" : "NUMBER",
+                      "Description" : "",
+                      "ParameterName" : "year",
+                      "bindingDirection" : "Target",
+                      "bindingType" : "Property",
+                      "isBindingSource" : false,
+                      "isBindingTarget" : true,
+                      "shown" : true
+                    }, {
+                      "BaseType" : "STRING",
+                      "Description" : "",
+                      "ParameterName" : "name",
+                      "bindingDirection" : "Target",
+                      "bindingType" : "Property",
+                      "isBindingSource" : false,
+                      "isBindingTarget" : true,
+                      "shown" : true
+                    } ]
+                  },
+                  "Widgets" : [ ]
+                }, {
+                  "Properties" : {
+                    "Area" : "UI",
+                    "AutoEvaluate" : false,
+                    "DataChangeType" : "ALWAYS",
+                    "DisableInitialOutput" : false,
+                    "DisplayName" : "barChart",
+                    "Expression" : "let num=/^[0-9]+$/;\nlet str=/^([a-zA-Z ]){2,30}$/;\nif(!(num.test(month))){\n\tresult=\"*Please select the month\";\n}else{\n\tif(!(num.test(year))){\n    \tresult=\"*Please select the year\";\n    }else{\n    \tif(!(str.test(name))){\n        \tresult=\"*Please select the product\";\n        }else{\n        \tresult=\" \";\n        }\n    }\n}",
+                    "FireOnFirstValue" : false,
+                    "Height" : 28,
+                    "Id" : "expression2-24",
+                    "LastContainer" : false,
+                    "Left" : null,
+                    "OutputBaseType" : "STRING",
+                    "ResponsiveLayout" : false,
+                    "ShowDataLoading" : true,
+                    "Top" : null,
+                    "Type" : "expression2",
+                    "Visible" : true,
+                    "Width" : 200,
+                    "Z-index" : 10,
+                    "__TypeDisplayName" : "Expression",
+                    "_currentParameterDefs" : [ {
+                      "BaseType" : "NUMBER",
+                      "Description" : "",
+                      "ParameterName" : "month",
+                      "bindingDirection" : "Target",
+                      "bindingType" : "Property",
+                      "isBindingSource" : false,
+                      "isBindingTarget" : true,
+                      "shown" : true
+                    }, {
+                      "BaseType" : "NUMBER",
+                      "Description" : "",
+                      "ParameterName" : "year",
+                      "bindingDirection" : "Target",
+                      "bindingType" : "Property",
+                      "isBindingSource" : false,
+                      "isBindingTarget" : true,
+                      "shown" : true
+                    }, {
+                      "BaseType" : "STRING",
+                      "Description" : "",
+                      "ParameterName" : "name",
+                      "bindingDirection" : "Target",
+                      "bindingType" : "Property",
+                      "isBindingSource" : false,
+                      "isBindingTarget" : true,
+                      "shown" : true
+                    } ]
+                  },
+                  "Widgets" : [ ]
+                } ]
+              },
+              "mashupType" : "mashup"
+            }
+            ]]>
+            </mashupContent>
+            <preview></preview>
+        </Mashup>
+    </Mashups>
+</Entities>
