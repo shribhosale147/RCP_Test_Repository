@@ -1,0 +1,2569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Entities
+ majorVersion="9"
+ minorVersion="3"
+ universal="password">
+    <ThingShapes>
+        <ThingShape
+         className=""
+         description=""
+         documentationContent=""
+         homeMashup=""
+         name="47364.GIMS.Services.ThingShape"
+         projectName="ITC.Training.47364.GIMS.Project"
+         tags="">
+            <PropertyDefinitions>
+                <PropertyDefinition
+                 aspect.cacheTime="0.0"
+                 aspect.dataChangeType="VALUE"
+                 aspect.defaultValue="1.0"
+                 baseType="NUMBER"
+                 category=""
+                 description=""
+                 isLocalOnly="false"
+                 name="id"
+                 ordinal="2"></PropertyDefinition>
+            </PropertyDefinitions>
+            <ServiceDefinitions>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="true"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="AddProductContainer">
+                    <ResultType
+                     baseType="NOTHING"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="NUMBER"
+                         description=""
+                         name="ProductID"
+                         ordinal="1"></FieldDefinition>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="STRING"
+                         description=""
+                         name="ProductName"
+                         ordinal="2"></FieldDefinition>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="NUMBER"
+                         description=""
+                         name="Quantity"
+                         ordinal="3"></FieldDefinition>
+                    </ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="AddProductDataEntry">
+                    <ResultType
+                     baseType="NOTHING"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="DATETIME"
+                         description=""
+                         name="InputDate"
+                         ordinal="1"></FieldDefinition>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="STRING"
+                         description=""
+                         name="ProductName"
+                         ordinal="2"></FieldDefinition>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="NUMBER"
+                         description=""
+                         name="ProductTotalQuantity"
+                         ordinal="3"></FieldDefinition>
+                    </ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="AutoUpdateInStockDataTableEntries">
+                    <ResultType
+                     baseType="NOTHING"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions></ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="AutoUpdateOutStockDataTableEntries">
+                    <ResultType
+                     baseType="NOTHING"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions></ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="true"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="CheckDeletedProductPresent">
+                    <ResultType
+                     baseType="NUMBER"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="NUMBER"
+                         description=""
+                         name="ProductID"
+                         ordinal="1"></FieldDefinition>
+                    </ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="checkProductPresentStock">
+                    <ResultType
+                     baseType="BOOLEAN"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="STRING"
+                         description=""
+                         name="ProductName"
+                         ordinal="1"></FieldDefinition>
+                    </ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="DailyReport">
+                    <ResultType
+                     baseType="NOTHING"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions></ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="GetAllSellTotalQuantity">
+                    <ResultType
+                     baseType="NUMBER"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions></ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="GetAvailableProductQuantity">
+                    <ResultType
+                     baseType="NUMBER"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="STRING"
+                         description=""
+                         name="ProductName"
+                         ordinal="1"></FieldDefinition>
+                    </ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="GetCurrentProductQuantity">
+                    <ResultType
+                     baseType="NUMBER"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="NUMBER"
+                         description=""
+                         name="ProductID"
+                         ordinal="1"></FieldDefinition>
+                    </ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="GetDailySellQuantity">
+                    <ResultType
+                     baseType="NUMBER"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions></ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="GetDataQuantityAlert">
+                    <ResultType
+                     aspect.dataShape="47364.GIMS.ProductDetails.DataShape"
+                     baseType="INFOTABLE"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions></ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="GetDataTableEntriesStock">
+                    <ResultType
+                     aspect.dataShape="47364.GIMS.Stock.DataShape"
+                     baseType="INFOTABLE"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions></ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="GetDateMonth">
+                    <ResultType
+                     aspect.dataShape="47364.GIMS.DateMonth.DataShape"
+                     baseType="INFOTABLE"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions></ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="GetDateYear">
+                    <ResultType
+                     aspect.dataShape="47364.GIMS.DateYear.DataShape"
+                     baseType="INFOTABLE"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions></ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="GetMonthlyDataTableEntries">
+                    <ResultType
+                     aspect.dataShape="47364.GIMS.Report.DataShape"
+                     baseType="INFOTABLE"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="NUMBER"
+                         description=""
+                         name="Month"
+                         ordinal="3"></FieldDefinition>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="STRING"
+                         description=""
+                         name="ProductName"
+                         ordinal="3"></FieldDefinition>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="NUMBER"
+                         description=""
+                         name="Year"
+                         ordinal="2"></FieldDefinition>
+                    </ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="GetMonthlySellQuantity">
+                    <ResultType
+                     baseType="NUMBER"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions></ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="GetNotificationCount">
+                    <ResultType
+                     baseType="NUMBER"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions></ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="GetQuantityData">
+                    <ResultType
+                     baseType="NUMBER"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="NUMBER"
+                         description=""
+                         name="ProductID"
+                         ordinal="1"></FieldDefinition>
+                    </ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="true"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="GetYearlyDataTableEntries">
+                    <ResultType
+                     aspect.dataShape="47364.GIMS.Report.DataShape"
+                     baseType="INFOTABLE"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="DATETIME"
+                         description=""
+                         name="EndDate"
+                         ordinal="2"></FieldDefinition>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="STRING"
+                         description=""
+                         name="ProductName"
+                         ordinal="3"></FieldDefinition>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="DATETIME"
+                         description=""
+                         name="StartDate"
+                         ordinal="1"></FieldDefinition>
+                    </ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="ResetDayTotal">
+                    <ResultType
+                     baseType="NOTHING"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions></ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="SetPagination">
+                    <ResultType
+                     aspect.dataShape="47364.GIMS.Report.DataShape"
+                     baseType="INFOTABLE"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions>
+                        <FieldDefinition
+                         baseType="QUERY"
+                         description=""
+                         name="FilterQuery"
+                         ordinal="4"></FieldDefinition>
+                        <FieldDefinition
+                         baseType="NUMBER"
+                         description=""
+                         name="PageNumber"
+                         ordinal="1"></FieldDefinition>
+                        <FieldDefinition
+                         baseType="NUMBER"
+                         description=""
+                         name="PageSize"
+                         ordinal="2"></FieldDefinition>
+                    </ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="test1234">
+                    <ResultType
+                     baseType="STRING"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions></ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="true"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="UpdateCancelledProduct">
+                    <ResultType
+                     baseType="NOTHING"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="STRING"
+                         description=""
+                         name="ProductName"
+                         ordinal="1"></FieldDefinition>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="NUMBER"
+                         description=""
+                         name="Quantity"
+                         ordinal="2"></FieldDefinition>
+                    </ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="UpdateContainerQuantity">
+                    <ResultType
+                     baseType="NOTHING"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="NUMBER"
+                         description=""
+                         name="ProductID"
+                         ordinal="1"></FieldDefinition>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="NUMBER"
+                         description=""
+                         name="Quantity"
+                         ordinal="2"></FieldDefinition>
+                    </ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="true"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="updateContainerValues">
+                    <ResultType
+                     baseType="NOTHING"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="INFOTABLE"
+                         description=""
+                         name="input"
+                         ordinal="1"></FieldDefinition>
+                    </ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="UpdateCustBuyContainerQuantity">
+                    <ResultType
+                     baseType="NOTHING"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="STRING"
+                         description=""
+                         name="ProductName"
+                         ordinal="1"></FieldDefinition>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="NUMBER"
+                         description=""
+                         name="Quantity"
+                         ordinal="2"></FieldDefinition>
+                    </ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="UpdateProductDataEntry">
+                    <ResultType
+                     baseType="NOTHING"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="NUMBER"
+                         description=""
+                         name="ID"
+                         ordinal="1"></FieldDefinition>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="DATETIME"
+                         description=""
+                         name="InputDate"
+                         ordinal="2"></FieldDefinition>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="STRING"
+                         description=""
+                         name="ProductName"
+                         ordinal="3"></FieldDefinition>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="NUMBER"
+                         description=""
+                         name="ProductTotalQuantity"
+                         ordinal="4"></FieldDefinition>
+                    </ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="true"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="UpdateTotalQuantity">
+                    <ResultType
+                     baseType="NOTHING"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="NUMBER"
+                         description=""
+                         name="ProductID"
+                         ordinal="1"></FieldDefinition>
+                        <FieldDefinition
+                         aspect.isRequired="true"
+                         baseType="NUMBER"
+                         description=""
+                         name="Quantity"
+                         ordinal="2"></FieldDefinition>
+                    </ParameterDefinitions>
+                </ServiceDefinition>
+                <ServiceDefinition
+                 aspect.isAsync="false"
+                 category=""
+                 description=""
+                 isAllowOverride="false"
+                 isLocalOnly="false"
+                 isOpen="false"
+                 isPrivate="false"
+                 name="UpdateWeigthSensorData">
+                    <ResultType
+                     baseType="NOTHING"
+                     description=""
+                     name="result"
+                     ordinal="0"></ResultType>
+                    <ParameterDefinitions></ParameterDefinitions>
+                </ServiceDefinition>
+            </ServiceDefinitions>
+            <EventDefinitions></EventDefinitions>
+            <ServiceMappings></ServiceMappings>
+            <ServiceImplementations>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="AddProductContainer">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    let id=ProductID;
+                                    var query={
+                                        "filters":{
+                                            "type":"EQ",
+                                            "fieldName":"ProductID",
+                                            "value":id
+                                        }
+                                    };
+                                    
+                                    var rows=Things["47364.GIMS.ProductDetails.DataTable"].QueryDataTableEntries({
+                                        values: undefined /* INFOTABLE */,
+                                        maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                        tags: undefined /* TAGS */,
+                                        source: undefined /* STRING */,
+                                        query: query /* QUERY */
+                                    });
+                                    let currentQuantity;
+                                    let currentDayTotal;
+                                    if(rows.length==0){
+                                        currentQuantity=Quantity;
+                                        currentDayTotal=0;
+                                    }else{
+                                        currentQuantity=rows[0].ProductQuantity+Quantity;
+                                        currentDayTotal=rows[0].DayTotal;
+                                    }
+                                    
+                                    
+                                    var newEntry=Things["47364.GIMS.ProductDetails.DataTable"].CreateValues();
+                                    newEntry.ProductID=ProductID;
+                                    newEntry.ProductName=ProductName;
+                                    newEntry.ProductQuantity=currentQuantity;
+                                    newEntry.Status="In Stock";
+                                    newEntry.DayTotal=currentDayTotal;
+                                    Things["47364.GIMS.ProductDetails.DataTable"].AddOrUpdateDataTableEntries({
+                                        tags: undefined /* TAGS */,
+                                        location: undefined /* LOCATION */,
+                                        source: undefined /* STRING */,
+                                        sourceType: undefined /* STRING */,
+                                        values: newEntry /* INFOTABLE */
+                                    });
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="AddProductDataEntry">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    var name=ProductName;
+                                    var newEntry=Things["47364.GIMS.Stock.DataTable"].CreateValues();
+                                    Things["47364.GIMS.Stock.DataTable"].ProductID=Things["47364.GIMS.Stock.DataTable"].ProductID+1;
+                                    newEntry.ProductID=Things["47364.GIMS.Stock.DataTable"].ProductID;
+                                    newEntry.Date=InputDate;
+                                    newEntry.ProductName=name;
+                                    newEntry.ProductTotalQuantity=ProductTotalQuantity;
+                                    
+                                    Things["47364.GIMS.Stock.DataTable"].AddDataTableEntry({
+                                    	tags: undefined /* TAGS */,
+                                    	location: undefined /* LOCATION */,
+                                    	source: undefined /* STRING */,
+                                    	sourceType: undefined /* STRING */,
+                                    	values: newEntry /* INFOTABLE */
+                                    });
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="AutoUpdateInStockDataTableEntries">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    var query={
+                                    		"filters":{
+                                                "type":"AND",
+                                                	"filters":[
+                                                        {
+                                                        	"type":"GE",
+                                                            "fieldName":"ProductQuantity",
+                                                            "value":1
+                                                        },
+                                                        {
+                                                        	"type":"EQ",
+                                                            "fieldName":"Status",
+                                                            "value":"Out of Stock"
+                                                        }
+                                                    ]
+                                            }
+                                    };
+                                    
+                                    var rows=Things["47364.GIMS.ProductDetails.DataTable"].QueryDataTableEntries({
+                                    	values: undefined /* INFOTABLE */,
+                                    	maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                    	tags: undefined /* TAGS */,
+                                    	source: undefined /* STRING */,
+                                    	query: query /* QUERY */
+                                    });
+                                    
+                                    for(let i=0;i<rows.length;i++){
+                                    	var newEntry=Things["47364.GIMS.ProductDetails.DataTable"].CreateValues();
+                                        newEntry.ProductID=rows[i].ProductID;
+                                        newEntry.Status="In Stock";
+                                        Things["47364.GIMS.ProductDetails.DataTable"].UpdateDataTableEntries({
+                                    	tags: undefined /* TAGS */,
+                                    	location: undefined /* LOCATION */,
+                                    	source: undefined /* STRING */,
+                                    	sourceType: undefined /* STRING */,
+                                    	values: newEntry /* INFOTABLE */
+                                    });
+                                    }
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="AutoUpdateOutStockDataTableEntries">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    var query={
+                                    		"filters":{
+                                            		"type":"LT",
+                                                	"fieldName":"ProductQuantity",
+                                                	"value":1
+                                            }
+                                    };
+                                    
+                                    var rows=Things["47364.GIMS.ProductDetails.DataTable"].QueryDataTableEntries({
+                                    	values: undefined /* INFOTABLE */,
+                                    	maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                    	tags: undefined /* TAGS */,
+                                    	source: undefined /* STRING */,
+                                    	query: query /* QUERY */
+                                    });
+                                    
+                                    for(let i=0;i<rows.length;i++){
+                                    	var newEntry=Things["47364.GIMS.ProductDetails.DataTable"].CreateValues();
+                                        newEntry.ProductID=rows[i].ProductID;
+                                        newEntry.Status="Out of Stock";
+                                        Things["47364.GIMS.ProductDetails.DataTable"].UpdateDataTableEntries({
+                                    	tags: undefined /* TAGS */,
+                                    	location: undefined /* LOCATION */,
+                                    	source: undefined /* STRING */,
+                                    	sourceType: undefined /* STRING */,
+                                    	values: newEntry /* INFOTABLE */
+                                    });
+                                    }
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="CheckDeletedProductPresent">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    var query={
+                                    	"filters":{
+                                        	"type":"EQ",
+                                            "fieldName":"ProductID",
+                                            "value":ProductID
+                                        }
+                                    };
+                                    
+                                    // result: INFOTABLE dataShape: ""
+                                    // Warning: Potential Performance issue, since query filter is performed in Memory
+                                    var rows = Things["47364.GIMS.ProductDetails.DataTable"].QueryDataTableEntries({
+                                    	maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                    	values: undefined /* INFOTABLE */,
+                                    	query: query /* QUERY */,
+                                    	source: undefined /* STRING */,
+                                    	tags: undefined /* TAGS */
+                                    });
+                                    if(rows.length==0){
+                                    	result=0;
+                                    }else{
+                                    	result=rows[0].ProductID;
+                                    }
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="checkProductPresentStock">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    var query={
+                                    	"filters":{
+                                        	"type":"EQ",
+                                            "fieldName":"ProductName",
+                                            "value":ProductName
+                                        }
+                                    };
+                                    // result: INFOTABLE dataShape: ""
+                                    // Warning: Potential Performance issue, since query filter is performed in Memory
+                                    var row= Things["47364.GIMS.Stock.DataTable"].QueryDataTableEntries({
+                                    	maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                    	values: undefined /* INFOTABLE */,
+                                    	query: query /* QUERY */,
+                                    	source: undefined /* STRING */,
+                                    	tags: undefined /* TAGS */
+                                    });
+                                    
+                                    if(row.length>0){
+                                    	result=false;
+                                    }else{
+                                    	result=true;
+                                    }
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="DailyReport">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    var cdate=new Date();
+                                    var d=cdate.getFullYear()+"-"+(cdate.getMonth()+1)+"-"+cdate.getDate()+" "+"00"+":"+"00"+":"+"00"+"."+"000";
+                                    var date=parseDate(d,"yyyy-MM-dd HH:mm:ss.SSS");
+                                    var rows = Things["47364.GIMS.ProductDetails.DataTable"].QueryDataTableEntries({
+                                    	maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                    	values: undefined /* INFOTABLE */,
+                                    	query: undefined /* QUERY */,
+                                    	source: undefined /* STRING */,
+                                    	tags: undefined /* TAGS */
+                                    });
+                                    for(let i=0;i<rows.length;i++){
+                                        Things["47364.GIMS.Report.DataTable"].ReportID=Things["47364.GIMS.Report.DataTable"].ReportID+1;
+                                        let TempID=Things["47364.GIMS.Report.DataTable"].ReportID;
+                                    	var newEntry=Things["47364.GIMS.Report.DataTable"].CreateValues();
+                                        newEntry.ID=TempID;
+                                        newEntry.PDate=date;
+                                        newEntry.ProductID=rows[i].ProductID;
+                                        newEntry.ProductName=rows[i].ProductName;
+                                        newEntry.ProductQuantity=rows[i].DayTotal;
+                                        
+                                        Things["47364.GIMS.Report.DataTable"].AddDataTableEntry({
+                                    	tags: undefined /* TAGS */,
+                                    	location: undefined /* LOCATION */,
+                                    	source: undefined /* STRING */,
+                                    	sourceType: undefined /* STRING */,
+                                    	values: newEntry /* INFOTABLE */
+                                    });
+                                        
+                                    }
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="GetAllSellTotalQuantity">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    // result: INFOTABLE dataShape: ""
+                                    // Warning: Potential Performance issue, since query filter is performed in Memory
+                                    var rows = Things["47364.GIMS.Report.DataTable"].QueryDataTableEntries({
+                                        maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                        values: undefined /* INFOTABLE */,
+                                        query: undefined /* QUERY */,
+                                        source: undefined /* STRING */,
+                                        tags: undefined /* TAGS */
+                                    });
+                                    
+                                    var totalQuantity=0;
+                                    
+                                    for(let i=0;i<rows.length;i++){
+                                        totalQuantity=totalQuantity+rows[i].ProductQuantity;
+                                    }
+                                    
+                                    result=totalQuantity;
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="GetAvailableProductQuantity">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    var name=ProductName;
+                                    var query={
+                                    	"filters":{
+                                        	"type":"EQ",
+                                        	"fieldName":"ProductName",
+                                        	"value":name
+                                        }
+                                    };
+                                    
+                                    // result: INFOTABLE dataShape: ""
+                                    // Warning: Potential Performance issue, since query filter is performed in Memory
+                                    var rows= Things["47364.GIMS.ProductDetails.DataTable"].QueryDataTableEntries({
+                                    	maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                    	values: undefined /* INFOTABLE */,
+                                    	query: query /* QUERY */,
+                                    	source: undefined /* STRING */,
+                                    	tags: undefined /* TAGS */
+                                    });
+                                    result=rows[0].ProductQuantity;
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="GetCurrentProductQuantity">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    var query={
+                                    	"filters":{
+                                        	"type":"EQ",
+                                            "fieldName":"ProductID",
+                                            "value":ProductID
+                                        }
+                                    };
+                                    var rows=Things["47364.GIMS.ProductDetails.DataTable"].QueryDataTableEntries({
+                                    	values: undefined /* INFOTABLE */,
+                                    	maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                    	tags: undefined /* TAGS */,
+                                    	source: undefined /* STRING */,
+                                    	query: query /* QUERY */
+                                    });
+                                    if(rows.length==0){
+                                    	result=0;
+                                    }else{
+                                    	result=rows[0].ProductQuantity;
+                                    }
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="GetDailySellQuantity">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    // result: INFOTABLE dataShape: ""
+                                    var rows = Things["47364.GIMS.ProductDetails.DataTable"].GetDataTableEntries({
+                                    	maxItems: undefined /* NUMBER {"defaultValue":500} */
+                                    });
+                                    
+                                    var totalQuantity=0;
+                                    for(let i=0;i<rows.length;i++){
+                                    	totalQuantity=totalQuantity+rows[i].DayTotal;
+                                    }
+                                    
+                                    result=totalQuantity;
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="GetDataQuantityAlert">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    var query={
+                                    	"filters":{
+                                        	"type":"LT",
+                                            "fieldName":"ProductQuantity",
+                                            "value":25
+                                        }
+                                    };
+                                    result=Things["47364.GIMS.ProductDetails.DataTable"].QueryDataTableEntries({
+                                    	values: undefined /* INFOTABLE */,
+                                    	maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                    	tags: undefined /* TAGS */,
+                                    	source: undefined /* STRING */,
+                                    	query: query /* QUERY */
+                                    });
+                                    result.RemoveField("key");
+                                    result.RemoveField("location");
+                                    result.RemoveField("source");
+                                    result.RemoveField("sourceType");
+                                    result.RemoveField("tags");
+                                    result.RemoveField("timestamp");
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="GetDataTableEntriesStock">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    // result: INFOTABLE dataShape: ""
+                                    let TempInfo = Things["47364.GIMS.Stock.DataTable"].GetDataTableEntries({
+                                    	maxItems: undefined /* NUMBER {"defaultValue":500} */
+                                    });
+                                    
+                                    let localInfoTable =TempInfo;
+                                    let sort = {
+                                        name: "ProductID",
+                                        ascending: false
+                                    };
+                                    localInfoTable.Sort(sort);
+                                    result = localInfoTable;
+                                    result.RemoveField("key");
+                                    result.RemoveField("location");
+                                    result.RemoveField("source");
+                                    result.RemoveField("sourceType");
+                                    result.RemoveField("tags");
+                                    result.RemoveField("timestamp");
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="GetDateMonth">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    // CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(47364.GIMS.DateMonth.DataShape)
+                                    var MonthInfotable = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape({
+                                        infoTableName: "InfoTable",
+                                        dataShapeName: "47364.GIMS.DateMonth.DataShape"
+                                    });
+                                    
+                                    for(let i=1;i<=12;i++){
+                                    	// 47364.GIMS.DateMonth.DataShape entry object
+                                    let newEntry = {
+                                        Month: i // NUMBER
+                                    };
+                                    MonthInfotable.AddRow(newEntry);
+                                    }
+                                    result=MonthInfotable;
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="GetDateYear">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    // CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(47364.GIMS.DateYear.DataShape)
+                                    var YearInfotable = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape({
+                                        infoTableName: "InfoTable",
+                                        dataShapeName: "47364.GIMS.DateYear.DataShape"
+                                    });
+                                    
+                                    for(let i=2000;i<=2090;i++){
+                                    	// 47364.GIMS.DateYear.DataShape entry object
+                                    let newEntry = {
+                                        Year: i // NUMBER
+                                    };
+                                    YearInfotable.AddRow(newEntry);
+                                    }
+                                    
+                                    result=YearInfotable;
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="GetMonthlyDataTableEntries">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    var name=ProductName;
+                                    let m=Month;
+                                    let y=Year;
+                                    var firstDay = new Date(y, m-1, 1);
+                                    var lastDay = new Date(y, m, 0);
+                                    var query={
+                                    	"filters":{
+                                        	"type":"AND",
+                                            	"filters":[{
+                                                    "type":"AND",
+                                                    "filters":[
+                                                				{
+                                                    	"type":"GE",
+                                                        "fieldName":"PDate",
+                                                        "value":firstDay
+                                                    },
+                                                    {
+                                                    	"type":"LE",
+                                                        "fieldName":"PDate",
+                                                        "value":lastDay
+                                                    }
+                                                	]
+                                                    
+                                                },
+                                                 {
+                                    				"type":"EQ","fieldName":"ProductName","value":name
+                                    			}         
+                                                 ]
+                                        }
+                                    };
+                                    
+                                    result=Things["47364.GIMS.Report.DataTable"].QueryDataTableEntries({
+                                    	values: undefined /* INFOTABLE */,
+                                    	maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                    	tags: undefined /* TAGS */,
+                                    	source: undefined /* STRING */,
+                                    	query: query /* QUERY */
+                                    });
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="GetMonthlySellQuantity">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    var date = new Date();
+                                    var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
+                                    var fDay=firstDay.getFullYear()+"-"+(firstDay.getMonth()+1)+"-"+firstDay.getDate();
+                                    var lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
+                                    var lDay=lastDay.getFullYear()+"-"+(lastDay.getMonth()+1)+"-"+lastDay.getDate();
+                                    var query={
+                                    	"filters":{
+                                        	"type":"AND",
+                                            	"filters":[
+                                                    {
+                                                		"type":"GE",
+                                                        "fieldName":"PDate",
+                                                        "value":fDay
+                                                	},
+                                                    {
+                                                    	"type":"LE",
+                                                        "fieldName":"PDate",
+                                                        "value":lDay
+                                                    }
+                                                ]
+                                        }
+                                    };
+                                    
+                                    // result: INFOTABLE dataShape: ""
+                                    // Warning: Potential Performance issue, since query filter is performed in Memory
+                                    var rows = Things["47364.GIMS.Report.DataTable"].QueryDataTableEntries({
+                                    	maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                    	values: undefined /* INFOTABLE */,
+                                    	query: query /* QUERY */,
+                                    	source: undefined /* STRING */,
+                                    	tags: undefined /* TAGS */
+                                    });
+                                    
+                                    var totalQuantity=0;
+                                    
+                                    for(let i=0;i<rows.length;i++){
+                                    	totalQuantity=totalQuantity+rows[i].ProductQuantity;
+                                    }
+                                    
+                                    result=totalQuantity;
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="GetNotificationCount">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    var query={
+                                    	"filters":{
+                                        	"type":"LT",
+                                            "fieldName":"ProductQuantity",
+                                            "value":25
+                                        }
+                                    };
+                                    
+                                    var rows=Things["47364.GIMS.ProductDetails.DataTable"].QueryDataTableEntries({
+                                    	values: undefined /* INFOTABLE */,
+                                    	maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                    	tags: undefined /* TAGS */,
+                                    	source: undefined /* STRING */,
+                                    	query: query /* QUERY */
+                                    });
+                                    
+                                    result=rows.length;
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="GetQuantityData">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    let id=ProductID;
+                                    var query={
+                                    	"filters":{
+                                        	type:"EQ",
+                                            "fieldName":"ProductID",
+                                            "value":id
+                                        }
+                                    };
+                                    
+                                    var rows=Things["47364.GIMS.ProductDetails.DataTable"].QueryDataTableEntries({
+                                    	values: undefined /* INFOTABLE */,
+                                    	maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                    	tags: undefined /* TAGS */,
+                                    	source: undefined /* STRING */,
+                                    	query: query /* QUERY */
+                                    });
+                                    
+                                    if(rows.length==0){
+                                    	result=100;
+                                    }else{
+                                    	let currentQuantity=rows[0].ProductQuantity;
+                                    	let total=100-currentQuantity;
+                                        if(total==0){
+                                        	result=100;
+                                        }else{
+                                        	result=total;
+                                        }
+                                    }
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="GetYearlyDataTableEntries">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    var name=ProductName;
+                                    
+                                    var sDate=StartDate.getFullYear()+"-"+(StartDate.getMonth()+1)+"-"+StartDate.getDate();
+                                    
+                                    var eDate=EndDate.getFullYear()+"-"+(EndDate.getMonth()+1)+"-"+EndDate.getDate();
+                                    var query={
+                                    	"filters":{
+                                        	"type":"AND",
+                                            	"filters":[
+                                                    {
+                                                    	"type":"AND",
+                                                        	"filters":[
+                                                            {
+                                                    	"type":"GE",
+                                                        "fieldName":"PDate",
+                                                        "value":sDate
+                                                    },
+                                                    {
+                                                    	"type":"LE",
+                                                        "fieldName":"PDate",
+                                                        "value":eDate
+                                                    }]
+                                                    },
+                                                    {
+                                                    	"type":"EQ",
+                                                        "fieldName":"ProductName",
+                                                        "value":name
+                                                    }
+                                                ]
+                                        }
+                                    };
+                                    
+                                    result=Things["47364.GIMS.Report.DataTable"].QueryDataTableEntries({
+                                    	values: undefined /* INFOTABLE */,
+                                    	maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                    	tags: undefined /* TAGS */,
+                                    	source: undefined /* STRING */,
+                                    	query: query /* QUERY */
+                                    });
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="ResetDayTotal">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    var rows=Things["47364.GIMS.ProductDetails.DataTable"].GetDataTableEntries({
+                                    	maxItems: undefined /* NUMBER {"defaultValue":500} */
+                                    });
+                                    for(let i=0;i<rows.length;i++){
+                                    	var newEntry=Things["47364.GIMS.ProductDetails.DataTable"].CreateValues();
+                                        newEntry.ProductID=rows[i].ProductID;
+                                        newEntry.DayTotal=0;
+                                        Things["47364.GIMS.ProductDetails.DataTable"].UpdateDataTableEntries({
+                                    	tags: undefined /* TAGS */,
+                                    	location: undefined /* LOCATION */,
+                                    	source: undefined /* STRING */,
+                                    	sourceType: undefined /* STRING */,
+                                    	values: newEntry /* INFOTABLE */
+                                    });
+                                    }
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="SetPagination">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    // result: INFOTABLE dataShape: ""
+                                    // Warning: Potential Performance issue, since query filter is performed in Memory
+                                    var info = Things["47364.GIMS.Report.DataTable"].QueryDataTableEntries({
+                                    	maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                    	values: undefined /* INFOTABLE */,
+                                    	query: FilterQuery /* QUERY */,
+                                    	source: undefined /* STRING */,
+                                    	tags: undefined /* TAGS */
+                                    });
+                                    // CreateInfoTableFromDataShape(infoTableName:STRING("InfoTable"), dataShapeName:STRING):INFOTABLE(47364.GIMS.Report.DataShape)
+                                    var PageInfo = Resources["InfoTableFunctions"].CreateInfoTableFromDataShape({
+                                        infoTableName: "InfoTable",
+                                        dataShapeName: "47364.GIMS.Report.DataShape"
+                                    });
+                                    var numRows = info.getRowCount();
+                                    var startRow = (PageNumber > 0 ? PageNumber - 1 : 0) * PageSize;
+                                    var numAdded = 0;
+                                    
+                                    for (var r = startRow; r < numRows && numAdded < PageSize; r++) {
+                                        PageInfo.addRow(info.getRow(r));
+                                        numAdded++;
+                                    }
+                                    
+                                    result=PageInfo;
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="test1234">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    var num= undefined;
+                                    if(!!num){
+                                    	result=num.toFixed(0);
+                                    }else{
+                                    	result="";
+                                    }
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="UpdateCancelledProduct">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    let quantity=Quantity;
+                                    var name=ProductName;
+                                    var query={
+                                    	"filters":{
+                                        	"type":"EQ",
+                                            "fieldName":"ProductName",
+                                            "value":name
+                                        }
+                                    };
+                                    
+                                    // result: INFOTABLE dataShape: ""
+                                    // Warning: Potential Performance issue, since query filter is performed in Memory
+                                    var rows1 = Things["47364.GIMS.Stock.DataTable"].QueryDataTableEntries({
+                                    	maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                    	values: undefined /* INFOTABLE */,
+                                    	query: query /* QUERY */,
+                                    	source: undefined /* STRING */,
+                                    	tags: undefined /* TAGS */
+                                    });
+                                    
+                                    if(rows1.length!=0){
+                                    	var newEntry=Things["47364.GIMS.Stock.DataTable"].CreateValues();
+                                        newEntry.ProductID=rows1[0].ProductID;
+                                        newEntry.ProductTotalQuantity=rows1[0].ProductTotalQuantity+quantity;
+                                        Things["47364.GIMS.Stock.DataTable"].UpdateDataTableEntries({
+                                    	sourceType: undefined /* STRING */,
+                                    	values: newEntry /* INFOTABLE */,
+                                    	location: undefined /* LOCATION */,
+                                    	source: undefined /* STRING */,
+                                    	tags: undefined /* TAGS */
+                                    });
+                                    }
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="UpdateContainerQuantity">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    let id=ProductID;
+                                    var query={
+                                    	"filters":{
+                                        	"type":"EQ",
+                                            "fieldName":"ProductID",
+                                            "value":id
+                                        }
+                                        
+                                    };
+                                    var rows=Things["47364.GIMS.ProductDetails.DataTable"].QueryDataTableEntries({
+                                    	values: undefined /* INFOTABLE */,
+                                    	maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                    	tags: undefined /* TAGS */,
+                                    	source: undefined /* STRING */,
+                                    	query: query /* QUERY */
+                                    });
+                                    
+                                    let currentQuantity=rows[0].ProductQuantity;
+                                    var newEntry=Things["47364.GIMS.ProductDetails.DataTable"].CreateValues();
+                                    newEntry.ProductID=ProductID;
+                                    newEntry.ProductQuantity=currentQuantity+Quantity;
+                                    Things["47364.GIMS.ProductDetails.DataTable"].UpdateDataTableEntry({
+                                    	tags: undefined /* TAGS */,
+                                    	location: undefined /* LOCATION */,
+                                    	source: undefined /* STRING */,
+                                    	sourceType: undefined /* STRING */,
+                                    	values: newEntry /* INFOTABLE */
+                                    });
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="updateContainerValues">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    var newEntry=Things["47364.GIMS.ProductDetails.DataTable"].CreateValues();
+                                    newEntry.ProductID=input.ProductID;
+                                    newEntry.ProductName=input.ProductName;
+                                    newEntry.ProductQuantity=input.ProductQuantity;
+                                    newEntry.Status="In Stock";
+                                    Things["47364.GIMS.ProductDetails.DataTable"].AddOrUpdateDataTableEntries({
+                                        tags: undefined /* TAGS */,
+                                        location: undefined /* LOCATION */,
+                                        source: undefined /* STRING */,
+                                        sourceType: undefined /* STRING */,
+                                        values: newEntry /* INFOTABLE */
+                                    });
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="UpdateCustBuyContainerQuantity">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    var name=ProductName;
+                                    var query={
+                                    	"filters":{
+                                        	"type":"EQ",
+                                            "fieldName":"ProductName",
+                                            "value":name
+                                        }
+                                    };
+                                    
+                                    var rows=Things["47364.GIMS.ProductDetails.DataTable"].QueryDataTableEntries({
+                                    	values: undefined /* INFOTABLE */,
+                                    	maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                    	tags: undefined /* TAGS */,
+                                    	source: undefined /* STRING */,
+                                    	query: query /* QUERY */
+                                    });
+                                    
+                                    var newEntry=Things["47364.GIMS.ProductDetails.DataTable"].CreateValues();
+                                    newEntry.ProductID=rows[0].ProductID;
+                                    newEntry.ProductQuantity=rows[0].ProductQuantity-Quantity;
+                                    newEntry.DayTotal=rows[0].DayTotal+Quantity;
+                                    Things["47364.GIMS.ProductDetails.DataTable"].UpdateDataTableEntry({
+                                    	tags: undefined /* TAGS */,
+                                    	location: undefined /* LOCATION */,
+                                    	source: undefined /* STRING */,
+                                    	sourceType: undefined /* STRING */,
+                                    	values: newEntry /* INFOTABLE */
+                                    });
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="UpdateProductDataEntry">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    var newEntry=Things["47364.GIMS.Stock.DataTable"].CreateValues();
+                                    newEntry.ProductID=ID;
+                                    newEntry.Date=InputDate;
+                                    newEntry.ProductName=ProductName;
+                                    newEntry.ProductTotalQuantity=ProductTotalQuantity;
+                                    
+                                    Things["47364.GIMS.Stock.DataTable"].UpdateDataTableEntry({
+                                    	tags: undefined /* TAGS */,
+                                    	location: undefined /* LOCATION */,
+                                    	source: undefined /* STRING */,
+                                    	sourceType: undefined /* STRING */,
+                                    	values: newEntry /* INFOTABLE */
+                                    });
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="UpdateTotalQuantity">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    let id=ProductID;
+                                    var query={
+                                    	"filters":{
+                                        	"type":"EQ",
+                                            "fieldName":"ProductID",
+                                            "value":id
+                                        }
+                                    };
+                                    var rows=Things["47364.GIMS.Stock.DataTable"].QueryDataTableEntries({
+                                    	values: undefined /* INFOTABLE */,
+                                    	maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                    	tags: undefined /* TAGS */,
+                                    	source: undefined /* STRING */,
+                                    	query: query /* QUERY */
+                                    });
+                                    
+                                    let currentQuantity=rows[0].ProductTotalQuantity;
+                                    
+                                    var newEntry=Things["47364.GIMS.Stock.DataTable"].CreateValues();
+                                    newEntry.ProductID=ProductID;
+                                    newEntry.ProductTotalQuantity=currentQuantity-Quantity;
+                                    
+                                    Things["47364.GIMS.Stock.DataTable"].UpdateDataTableEntry({
+                                    	tags: undefined /* TAGS */,
+                                    	location: undefined /* LOCATION */,
+                                    	source: undefined /* STRING */,
+                                    	sourceType: undefined /* STRING */,
+                                    	values: newEntry /* INFOTABLE */
+                                    });
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+                <ServiceImplementation
+                 description=""
+                 handlerName="Script"
+                 name="UpdateWeigthSensorData">
+                    <ConfigurationTables>
+                        <ConfigurationTable
+                         dataShapeName=""
+                         description=""
+                         isMultiRow="false"
+                         name="Script"
+                         ordinal="0">
+                            <DataShape>
+                                <FieldDefinitions>
+                                    <FieldDefinition
+                                     baseType="STRING"
+                                     description="code"
+                                     name="code"
+                                     ordinal="0"></FieldDefinition>
+                                </FieldDefinitions>
+                            </DataShape>
+                            <Rows>
+                                <Row>
+                                    <code>
+                                    <![CDATA[
+                                    var randid= Math.floor(Math.random() * 14)+1;
+                                    
+                                    var query={
+                                        "filters":{
+                                            "type":"EQ",
+                                            "fieldName":"ProductID",
+                                            "value":randid
+                                        }
+                                    };
+                                    
+                                    // result: INFOTABLE dataShape: ""
+                                    // Warning: Potential Performance issue, since query filter is performed in Memory
+                                    var rows = Things["47364.GIMS.ProductDetails.DataTable"].QueryDataTableEntries({
+                                        maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                        values: undefined /* INFOTABLE */,
+                                        query: query /* QUERY */,
+                                        source: undefined /* STRING */,
+                                        tags: undefined /* TAGS */
+                                    });
+                                    let presentid;
+                                    if(rows.length!=0){
+                                        presentid=rows[0].ProductID;
+                                        var query1={
+                                            "filters":{
+                                                "type":"EQ",
+                                                "fieldName":"ProductID",
+                                                "value":presentid
+                                            }
+                                        };
+                                    
+                                        // result: INFOTABLE dataShape: ""
+                                        // Warning: Potential Performance issue, since query filter is performed in Memory
+                                        var rows1= Things["47364.GIMS.ProductDetails.DataTable"].QueryDataTableEntries({
+                                            maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                            values: undefined /* INFOTABLE */,
+                                            query: query1 /* QUERY */,
+                                            source: undefined /* STRING */,
+                                            tags: undefined /* TAGS */
+                                        });
+                                    
+                                    
+                                        if(rows1.length!=0){
+                                            let availableQuantity=rows1[0].ProductQuantity;
+                                            let inputQuantity=Math.floor(Math.random() * 20)+1;
+                                            if(inputQuantity<=availableQuantity){
+                                                var query2={
+                                                    "filters":{
+                                                        "type":"EQ",
+                                                        "fieldName":"ProductID",
+                                                        "value":presentid
+                                                    }
+                                                };
+                                    
+                                                var rows2=Things["47364.GIMS.ProductDetails.DataTable"].QueryDataTableEntries({
+                                                    values: undefined /* INFOTABLE */,
+                                                    maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                                    tags: undefined /* TAGS */,
+                                                    source: undefined /* STRING */,
+                                                    query: query2 /* QUERY */
+                                                });
+                                    
+                                                var newEntry=Things["47364.GIMS.ProductDetails.DataTable"].CreateValues();
+                                                newEntry.ProductID=rows2[0].ProductID;
+                                                newEntry.ProductQuantity=rows2[0].ProductQuantity-inputQuantity;
+                                                newEntry.DayTotal=rows2[0].DayTotal+inputQuantity;
+                                                Things["47364.GIMS.ProductDetails.DataTable"].UpdateDataTableEntry({
+                                                    tags: undefined /* TAGS */,
+                                                    location: undefined /* LOCATION */,
+                                                    source: undefined /* STRING */,
+                                                    sourceType: undefined /* STRING */,
+                                                    values: newEntry /* INFOTABLE */
+                                                });
+                                    
+                                                var query3={
+                                                    "filters":{
+                                                        "type":"LT",
+                                                        "fieldName":"ProductQuantity",
+                                                        "value":1
+                                                    }
+                                                };
+                                    
+                                                var rows3=Things["47364.GIMS.ProductDetails.DataTable"].QueryDataTableEntries({
+                                                    values: undefined /* INFOTABLE */,
+                                                    maxItems: undefined /* NUMBER {"defaultValue":500} */,
+                                                    tags: undefined /* TAGS */,
+                                                    source: undefined /* STRING */,
+                                                    query: query3 /* QUERY */
+                                                });
+                                    
+                                                for(let i=0;i<rows3.length;i++){
+                                                    var newEntry1=Things["47364.GIMS.ProductDetails.DataTable"].CreateValues();
+                                                    newEntry1.ProductID=rows3[i].ProductID;
+                                                    newEntry1.Status="Out of Stock";
+                                                    Things["47364.GIMS.ProductDetails.DataTable"].UpdateDataTableEntries({
+                                                        tags: undefined /* TAGS */,
+                                                        location: undefined /* LOCATION */,
+                                                        source: undefined /* STRING */,
+                                                        sourceType: undefined /* STRING */,
+                                                        values: newEntry1 /* INFOTABLE */
+                                                    });
+                                                }
+                                    
+                                            }
+                                        }
+                                    }
+                                    ]]>
+                                    </code>
+                                </Row>
+                            </Rows>
+                        </ConfigurationTable>
+                    </ConfigurationTables>
+                </ServiceImplementation>
+            </ServiceImplementations>
+            <Subscriptions>
+                <Subscription
+                 description=""
+                 enabled="true"
+                 eventName="DataChange"
+                 name="test"
+                 source=""
+                 sourceProperty="id"
+                 sourceType="Thing">
+                    <ServiceImplementation
+                     description=""
+                     handlerName="Script"
+                     name="test">
+                        <ConfigurationTables>
+                            <ConfigurationTable
+                             dataShapeName=""
+                             description=""
+                             isMultiRow="false"
+                             name="Script"
+                             ordinal="0">
+                                <DataShape>
+                                    <FieldDefinitions>
+                                        <FieldDefinition
+                                         baseType="STRING"
+                                         description="code"
+                                         name="code"
+                                         ordinal="0"></FieldDefinition>
+                                    </FieldDefinitions>
+                                </DataShape>
+                                <Rows>
+                                    <Row>
+                                        <code>
+                                        <![CDATA[
+                                        me.id=1;
+                                        ]]>
+                                        </code>
+                                    </Row>
+                                </Rows>
+                            </ConfigurationTable>
+                        </ConfigurationTables>
+                    </ServiceImplementation>
+                </Subscription>
+            </Subscriptions>
+            <avatar></avatar>
+            <DesignTimePermissions>
+                <Create></Create>
+                <Read></Read>
+                <Update></Update>
+                <Delete></Delete>
+                <Metadata></Metadata>
+            </DesignTimePermissions>
+            <RunTimePermissions>
+                <Permissions
+                 resourceName="*">
+                    <PropertyRead>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Admin.UserGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Worker.UserGroup"
+                         type="Group"></Principal>
+                    </PropertyRead>
+                    <PropertyWrite>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Admin.UserGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Worker.UserGroup"
+                         type="Group"></Principal>
+                    </PropertyWrite>
+                    <ServiceInvoke>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Admin.UserGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Worker.UserGroup"
+                         type="Group"></Principal>
+                    </ServiceInvoke>
+                    <EventInvoke>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Admin.UserGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Worker.UserGroup"
+                         type="Group"></Principal>
+                    </EventInvoke>
+                    <EventSubscribe>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Admin.UserGroup"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="47364.GIMS.Worker.UserGroup"
+                         type="Group"></Principal>
+                    </EventSubscribe>
+                </Permissions>
+            </RunTimePermissions>
+            <VisibilityPermissions>
+                <Visibility>
+                    <Principal
+                     isPermitted="true"
+                     name="47364.GIMS.Organization"
+                     type="Organization"></Principal>
+                </Visibility>
+            </VisibilityPermissions>
+            <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
+            <ConfigurationTables></ConfigurationTables>
+            <PropertyBindings></PropertyBindings>
+            <RemotePropertyBindings></RemotePropertyBindings>
+            <RemoteServiceBindings></RemoteServiceBindings>
+            <RemoteEventBindings></RemoteEventBindings>
+            <AlertConfigurations>
+                <AlertDefinitions
+                 name="id"></AlertDefinitions>
+            </AlertConfigurations>
+            <InstanceRunTimePermissions></InstanceRunTimePermissions>
+        </ThingShape>
+    </ThingShapes>
+</Entities>
